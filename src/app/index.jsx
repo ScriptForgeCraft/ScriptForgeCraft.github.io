@@ -1,19 +1,19 @@
-import React from 'react';
-import styles from './App.module.css';
-import { AddTodo } from '../features/AddTodo';
-import { TodoList } from '../widgets/TodoList';
-import { TodoStats } from '../widgets/TodoStats';
-import { reducer } from '../entities/Todo/reducer';
-import { useReducer, useEffect } from 'react';
+import React from "react";
+import styles from "./App.module.css";
+import { AddTodo } from "../features/AddTodo";
+import { TodoList } from "../widgets/TodoList";
+import { TodoStats } from "../widgets/TodoStats";
+import { initialState, reducer } from "../entities/Todo/reducer";
+import { useReducer, useEffect } from "react";
 
 export function App() {
   const [todos, dispatch] = useReducer(reducer, [], () => {
-    const stored = localStorage.getItem('todos');
-    return stored ? JSON.parse(stored) : [];
+    const stored = localStorage.getItem("todos");
+    return stored ? JSON.parse(stored) : [...initialState];
   });
 
   useEffect(() => {
-    localStorage.setItem('todos', JSON.stringify(todos));
+    localStorage.setItem("todos", JSON.stringify(todos));
   }, [todos]);
 
   return (

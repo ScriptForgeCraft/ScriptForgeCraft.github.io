@@ -1,3 +1,9 @@
+export const initialState = [
+  { id: Math.random(), text: "Learn Next.js", completed: false },
+  { id: Math.random(), text: "Learn Node.js", completed: false },
+  { id: Math.random(), text: "Complete Nest.js tutorial", completed: false },
+];
+
 export function reducer(state, action) {
   switch (action.type) {
     case 'AddTodos':
