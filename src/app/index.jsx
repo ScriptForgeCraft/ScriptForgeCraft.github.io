@@ -1,17 +1,20 @@
 import React from 'react';
+import styles from './App.module.css';
 import { AddTodo } from '../features/AddTodo';
 import { TodoList } from '../widgets/TodoList';
 import { TodoStats } from '../widgets/TodoStats';
-import styles from './App.module.css';
 import { reducer } from '../entities/Todo/reducer';
-import { useReducer } from 'react';
+import { useReducer, useEffect } from 'react';
 
 export function App() {
-  const [todos, dispatch] = useReducer(reducer, [
-    { id: Math.random(), text: 'Do morning exercise', completed: false },
-    { id: Math.random(), text: 'Read a book', completed: false },
-    { id: Math.random(), text: 'Finish work project', completed: false },
-  ]);
+  const [todos, dispatch] = useReducer(reducer, [], () => {
+    const stored = localStorage.getItem('todos');
+    return stored ? JSON.parse(stored) : [];
+  });
+
+  useEffect(() => {
+    localStorage.setItem('todos', JSON.stringify(todos));
+  }, [todos]);
 
   return (
     <div className={styles.App}>
