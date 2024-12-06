@@ -1,18 +1,55 @@
-.App {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  background-color: rgba(67, 69, 190, 0.705);
-  padding: 100px;
-  min-width: 200px;
-  min-height: 150px;
-  border-radius: 25px;
-  box-shadow: 10px 10px 10px rgb(65, 65, 65);
-  font-size: 16px;
-  font-family: Arial, sans-serif;
+@media (min-width: 900px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: rgba(67, 69, 190, 0.705);
+    padding: 100px;
+    min-width: 200px;
+    min-height: 150px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgb(65, 65, 65);
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+  }
+
+  .App div {
+    margin: 5px;
+  }
 }
 
-.App div {
-  margin: 5px;
+@media (max-width: 899px) {
+  .App {
+    display: block;
+    background-color: rgba(67, 69, 190, 0.5);
+    padding: 20px;
+    font-size: 14px;
+    min-width: 100px;
+    min-height: 100px;
+    border-radius: 10px;
+  }
+
+  .App div {
+    margin: 2px;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1024px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: rgba(67, 69, 190, 0.6);
+    padding: 50px;
+    min-width: 150px;
+    min-height: 120px;
+    font-size: 15px;
+    border-radius: 15px;
+  }
+
+  .App div {
+    margin: 4px;
+  }
 }
