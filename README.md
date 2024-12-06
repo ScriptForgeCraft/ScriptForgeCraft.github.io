@@ -7,31 +7,25 @@ This is a simple Todo application built using React. The app allows users to man
 - **Delete Todo**: Remove specific tasks from the list.
 - **Clear Completed**: Remove all tasks that are marked as completed.
 - **Persistent Data**: Stores todos in `localStorage` to maintain data across browser sessions.
-
 ## Project Structure
 
-src
-├── app
-│   ├── App.module.css          # App styles
-│   └── index.jsx               # Root App component
-├── entities
-│   └── Todo
-│       └── reducer.js          # State management logic
-├── features
-│   └── AddTodo
-│       ├── AddTodo.module.css  # Styles for AddTodo component
-│       └── index.jsx           # Component to add new todos
-├── widgets
-│   ├── TodoList
-│   │   ├── TodoList.module.css # Styles for TodoList component
-│   │   └── index.jsx           # Component to display todos
-│   └── TodoStats
-│       ├── TodoStats.module.css # Styles for TodoStats
-│       └── index.jsx            # Component to display todo stats
-├── shared
-│   └── styles
-│       └── global.css          # Global application styles
-└── index.js                    # Application entry point
+src/app/App.module.css          # Styles for the App component
+src/app/index.jsx               # Root App component
+
+src/entities/Todo/reducer.js    # State management logic
+
+src/features/AddTodo/AddTodo.module.css  # Styles for AddTodo component
+src/features/AddTodo/index.jsx           # Component to add new todos
+
+src/widgets/TodoList/TodoList.module.css # Styles for TodoList component
+src/widgets/TodoList/index.jsx           # Component to display todos
+
+src/widgets/TodoStats/TodoStats.module.css # Styles for TodoStats component
+src/widgets/TodoStats/index.jsx            # Component to display todo stats
+
+src/shared/styles/global.css    # Global application styles
+
+src/index.js                    # Application entry point
 
 ## Installation and Usage
 
