@@ -1,0 +1,22 @@
+:root {
+  --text_color_gold: #cbb488;
+  --text_color_dark_gold: #514836;
+}
+
+.block {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+
+  border: 1px solid red; /* for debug //remove */
+}
+
+.block-inner {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+ 
