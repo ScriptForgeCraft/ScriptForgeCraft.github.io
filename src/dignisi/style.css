@@ -1,1 +1,141 @@
- 
+/* ===============================
+   DIGNISI — HERO BLOCK
+==================================*/
+
+/* Основной контейнер hero */
+.hero {
+  background: #000;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  overflow: hidden;
+}
+.hero-text {
+  max-width: calc(100% - 10%);
+  margin-left: 8%;
+}
+
+/* Огромная буква — D декоративный элемент */
+.big-letter {
+  position: absolute;
+  left: 9%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: clamp(150px, 35vw, 45vw);
+  font-weight: 300;
+  font-family: serif;
+  color: var(--text_color_dark_gold);
+  text-shadow: 1px 1px 2px var(--text_color_gold);
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Заголовок */
+.hero-title {
+  font-size: clamp(2rem, 3vw, 3.5rem);
+  letter-spacing: 0.6rem;
+  color: var(--text_color_gold);
+  font-weight: 300;
+}
+.hero-line {
+  width: calc(100% - 10%);
+  height: 1px;
+  border: none;
+  background-color: var(--text_color_gold);
+  margin: 1.25rem 0 0.25rem;
+}
+
+.hero-subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: clamp(0.8rem, 1.1vw, 1rem);
+  letter-spacing: 0.1rem;
+  color: var(--text_color_gold);
+  font-weight: 200;
+}
+
+/* ===========================================
+   ABOUT COMPANY / MOBILE APP BLOCK
+=========================================== */
+
+.block-nav {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.block-logo img {
+  width: clamp(100px, 7vw, 8vw);
+  height: auto;
+}
+
+.block-menu ul {
+  display: flex;
+  gap: 2rem;
+}
+
+.block-menu a {
+  color: var(--text_color_gold);
+  font-size: 1rem;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+}
+
+.about-title span {
+  font-family: "Playfair Display", serif;
+  display: block;
+  &:first-child {
+    font-size: clamp(2rem, 3vw, 3.5rem);
+    letter-spacing: 0.1rem;
+  }
+  &:last-child {
+    font-size: clamp(2rem, 3vw, 3.5rem);
+    letter-spacing: 0.1rem;
+    color: var(--text_color_gold);
+  }
+}
+
+.about {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.about-image img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100dvh;
+  max-height: 80%;
+  z-index: 1;
+}
+
+/* Text */
+.about-text {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  gap: 2rem;
+  max-width: 70%;
+  margin-top: 1.5rem;
+}
+
+.about-text .col_left,
+.about-text .col_right {
+  flex: 1;
+  text-align: justify;
+  font-family: "Inter", sans-serif;
+  font-size: clamp(0.8rem, 1.1vw, 1rem);
+
+  font-weight: 200;
+}
+.about-text .col_right {
+  color: var(--text_color_gold);
+}
+
+.about-quote {
+  font-style: italic;
+  color: var(--text_color_gold);
+}
