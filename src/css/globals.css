@@ -8,9 +8,11 @@ html {
 :root {
   --text_color_gold: #cbb488;
   --text_color_dark_gold: #514836;
-  --root_padding: 4.25rem; /* = 20px */
+  --root_padding: 9.25rem; /* = 20px */
   --root_padding_top: 3.5rem; /* = 50px */
 }
+ 
+
 
 /* =======================================
    FULLSCREEN BLOCKS
@@ -20,7 +22,9 @@ html {
   min-height: 100dvh; /* mobile-correct */
   padding: 0 var(--root_padding);
   background-color: black;
-  border: 1px solid red;
   color: white;
+
+ 
 }
 
+ 
