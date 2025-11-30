@@ -195,7 +195,7 @@
    PARTNERS BLOCK
 =========================================== */
 .partners {
-  padding: var(--root_padding_top);
+  padding-top: var(--root_padding_top);
   background-color: #1c1919;
 }
 .grid-container {
@@ -203,7 +203,7 @@
   grid-template-columns: 1fr 4fr 1fr;
   grid-template-rows: auto auto;
   column-gap: 2rem;
-  row-gap: 2rem;
+  row-gap: 4rem;
   align-items: center;
 }
 
@@ -279,8 +279,71 @@
   opacity: 0;
 }
 
-
- 
 /* ===========================================
    PARTNERS BLOCK END
+=========================================== */
+
+/* ===========================================
+   LOYALTY  BLOCK 
+=========================================== */
+.loyalty-card {
+  padding-top: var(--root_padding_top);
+}
+
+.loyalty-display {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  align-items: center;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+
+  z-index: 10;
+background: linear-gradient(to right,
+   
+      rgb(0, 0, 0),
+      rgba(87, 74, 74, 0)
+),
+    url(../dignisi/images/loyalty-card/d.png);
+
+  background-size: 70% auto;
+  background-position: 100% center;
+  background-repeat: no-repeat;
+}
+
+.left-block,
+.right-block {
+  width: clamp(20rem, 32vw, 27rem);
+}
+.left-block__text {
+  text-align: justify;
+  flex: 1;
+  text-align: justify;
+  font-family: "Inter", sans-serif;
+  font-size: clamp(0.8rem, 1.1vw, 1rem);
+
+  font-weight: lighter;
+}
+
+.left-block__title {
+  text-align: center;
+  color: var(--text_color_gold);
+  font-size: calc(0.5rem + 4vw);
+  font-family: "Playfair Display", serif;
+  font-weight: 200;
+  line-height: 1;
+  padding: 2rem 0;
+  letter-spacing: 1rem;
+  filter: drop-shadow(2px 5px 50px var(--text_color_gold));
+}
+ 
+.right-block img {
+  filter: drop-shadow(50px 15px 80px #ffffff);
+}
+
+/* ===========================================
+   LOYALTY BLOCK END
 =========================================== */
