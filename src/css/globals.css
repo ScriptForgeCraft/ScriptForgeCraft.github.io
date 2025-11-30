@@ -21,11 +21,8 @@ html {
   min-height: 100vh; /* fallback */
   min-height: 100dvh; /* mobile-correct */
   padding: 0 var(--root_padding);
-  
   background-color: black;
-  color: white;
-
- 
+  color: white; 
 }
 
 
