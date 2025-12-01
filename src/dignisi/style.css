@@ -377,9 +377,8 @@
   position: absolute;
   bottom: 0;
   overflow: hidden;
-height: auto;
-max-height: 60dvh;
-
+  height: auto;
+  max-height: 60dvh;
 }
 .podcast-image img {
   width: 100%;
@@ -390,3 +389,99 @@ max-height: 60dvh;
    PODCAST BLOCK END
 =========================================== */
 
+/* ===========================================
+   ANALYTICS BLOCK 
+=========================================== */
+.analytics .block-nav {
+  padding: var(--root_padding_top) 0;
+}
+.analytics-title {
+  display: flex;
+  justify-content: end;
+  color: var(--text_color_gold);
+  font-weight: 100;
+}
+
+.analytics-intro {
+  margin-bottom: 2rem;
+  & :last-child {
+    color: var(--text_color_gold);
+  }
+}
+
+.analytics-graph {
+  display: flex;
+}
+
+.analytics-list {
+  margin-left: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.analytics-list li {
+  list-style: disc;
+  font-size: 1rem;
+  color: white;
+}
+
+.analytics-sublist {
+  margin-left: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.analytics-sublist li {
+  list-style: circle;
+  margin-bottom: 0.5rem;
+}
+
+.analytics-note {
+  width: 50%;
+}
+
+.analytics-note hr {
+  border: none;
+  height: 1px;
+  width: 100%;
+  background: var(--text_color_gold);
+  margin: 1.5rem 0;
+}
+
+/* RIGHT SIDE — CHART */
+.analytics-chart {
+  width: 100%;
+  height: auto;
+}
+
+.analytics-chart canvas {
+  width: 100% !important;
+  height: 100% !important;
+  max-height: 500px;
+  background-color: blue;
+}
+
+/* ===========================================
+   ANALYTICS BLOCK END
+=========================================== */
+
+/* ===========================================
+   ANALYTICS DETAILS BLOCK   
+=========================================== */
+
+.analytics-details-display{
+  display: flex;
+  flex-direction: column;
+}
+
+.analytics-details-col-right{
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  & P{
+    width: 50%;
+  }
+}
+
+/* ===========================================
+   ANALYTICS DETAILS BLOCK END
+=========================================== */
