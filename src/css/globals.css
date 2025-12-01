@@ -11,8 +11,11 @@ html {
   --root_padding: 9.25rem; /* = 20px */
   --root_padding_top: 3.5rem; /* = 50px */
 }
- 
-
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
 /* =======================================
    FULLSCREEN BLOCKS
@@ -22,13 +25,10 @@ html {
   min-height: 100dvh; /* mobile-correct */
   padding: 0 var(--root_padding);
   background-color: black;
-  color: white; 
+  /* border: 1px solid red; */
+  color: white;
 }
 
-
-
-.display-block{
+.display-block {
   display: block;
-
 }
- 

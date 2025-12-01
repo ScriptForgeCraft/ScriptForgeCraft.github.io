@@ -28,7 +28,9 @@
     <div class="page-wrapper">
 
         <section id="dignisi">
-            <div class="block hero">
+            <!--------------------BLOCK HERO -------------------->
+
+            <div class="block hero" id="block-hero">
 
                 <div class="hero-content">
 
@@ -49,14 +51,18 @@
 
             </div>
 
+            <!--------------------BLOCK END -------------------->
+
 
 
             <!--------------------BLOCK ABOUT -------------------->
+
             <div class="block about" id="block-about">
                 <div class="block-nav">
                     <!-- Логотип -->
                     <div class="block-logo" aria-hidden="true">
-                        <img src="src/dignisi/images/dignisi-logo.png" alt="">
+                        <a href="#block-hero"><img src="src/dignisi/images/dignisi-logo.png" alt="Dingisi Logo"></a>
+                        
                     </div>
 
                     <!-- Навигация -->
@@ -132,16 +138,19 @@
                     <p>“We work with dozens of architectural studios, as well as the Chamber of Architects.”</p>
                 </blockquote>
             </div>
+
             <!--------------------BLOCK ABOUT END -------------------->
 
 
 
             <!--------------------BLOCK  HISTORY -------------------->
+
+
             <div class="block history" id="block-history">
                 <div class="block-nav">
                     <!-- Логотип -->
                     <div class="block-logo" aria-hidden="true">
-                        <img src="src/dignisi/images/dignisi-logo.png" alt="">
+                        <a href="#block-hero"><img src="src/dignisi/images/dignisi-logo.png" alt="Dingisi Logo"></a>
                     </div>
 
                     <!-- Навигация -->
@@ -184,6 +193,8 @@
                 </div>
 
             </div>
+
+
             <!--------------------BLOCK HISTORY END -------------------->
 
 
@@ -194,7 +205,7 @@
                 <div class="block-nav">
                     <!-- Логотип -->
                     <div class="block-logo" aria-hidden="true">
-                        <img src="src/dignisi/images/dignisi-logo.png" alt="">
+                        <a href="#block-hero"><img src="src/dignisi/images/dignisi-logo.png" alt="Dingisi Logo"></a>
                     </div>
 
                     <!-- Навигация -->
@@ -402,14 +413,13 @@
 
 
 
-
             <!--------------------BLOCK LOYALTY CARD-------------------->
             <div class="block loyalty-card">
 
                 <div class="block-nav">
 
                     <div class="block-logo" aria-hidden="true">
-                        <img src="src/dignisi/images/dignisi-logo.png" alt="">
+                        <a href="#block-hero"><img src="src/dignisi/images/dignisi-logo.png" alt="Dingisi Logo"></a>
                     </div>
 
 
@@ -473,12 +483,17 @@
             </div>
             <!--------------------BLOCK LOYALTY CARD END -------------------->
 
+
+
+            <!--------------------BLOCK PODCAST-------------------->
+
+
             <div class="block podcast">
 
                 <div class="block-nav">
 
                     <div class="block-logo" aria-hidden="true">
-                        <img src="src/dignisi/images/dignisi-logo.png" alt="">
+                        <a href="#block-hero"><img src="src/dignisi/images/dignisi-logo.png" alt="Dingisi Logo"></a>
                     </div>
 
 
@@ -504,7 +519,8 @@
                             well-informed, gain insights into the field, and expand their knowledge.</p>
                     </div>
                     <div class="podcast-image">
-                      <a href="https://www.youtube.com/@DignisiPodcast"><img src="./src/dignisi/images/podcast/podcast-frame.png" alt="Dignisi Podcast"></a>  
+                        <a href="https://www.youtube.com/@DignisiPodcast"><img
+                                src="./src/dignisi/images/podcast/podcast-frame.png" alt="Dignisi Podcast"></a>
                     </div>
 
                 </div>
@@ -512,7 +528,91 @@
             </div>
 
 
+            <!--------------------BLOCK PODCAST END -------------------->
 
+
+
+            <!--------------------BLOCK ANALYTICS-------------------->
+            <div class="block analytics" id="block-analytics">
+                <div class="block-nav">
+
+                    <div class="block-logo" aria-hidden="true">
+                        <a href="#block-hero"><img src="src/dignisi/images/dignisi-logo.png" alt="Dingisi Logo"></a>
+                    </div>
+
+
+                    <nav class="block-menu" aria-label="Section navigation">
+                        <ul>
+                            <li><a href="#block-about">About</a></li>
+                            <li><a href="#block-history">History</a></li>
+                            <li><a href="#block-analytics">Analytics</a></li>
+
+                        </ul>
+                    </nav>
+
+                </div>
+
+                <div class="analytics-display">
+                    <header class="analytics-header">
+                        <h2 class="analytics-title">
+                            Real Estate Market Analysis in Armenia (2020–2025)
+                        </h2>
+                    </header>
+
+                    <!-- Вводный абзац -->
+                    <div class="analytics-intro">
+                        <p>
+                            Over the past five years, Armenia’s real estate market has undergone numerous changes
+                            driven by both internal and external factors. The chart below illustrates the number
+                            of real estate sales recorded in Armenia from 2020 to 2025.
+                        </p>
+                    </div>
+
+                    <!-- Дата и текст -->
+                    <div class="analytics-content">
+                        <h3 class="analytics-subtitle">2025</h3>
+
+                        <ul class="analytics-list">
+                            <li>
+                                <strong>Total sales transactions:</strong> 12,484, of which 2,484 (19.9%)
+                            </li>
+                        </ul>
+
+                        <ul class="analytics-sublist">
+                            <li>January: 3,640 transactions (759 from developers)</li>
+                            <li>February: 4,586 transactions (1,044 from developers)</li>
+                            <li>March: 4,258 transactions (681 from developers)</li>
+                        </ul>
+
+                        <div class="analytics-divider"></div>
+
+                        <p class="analytics-note">
+                            Out of the 12,484 transactions, 4,346 occurred in Yerevan,
+                            with 2,807 being apartment sales. Of those, 1,591 (~57%) were from developers.
+                        </p>
+                    </div>
+
+                    <!-- График -->
+                    <div class="analytics-chart">
+                        <canvas id="salesChart"></canvas>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+            </div>
+            <!--------------------BLOCK ANALYTICS END -------------------->
+
+            <!--------------------BLOCK ANALYTICS TWO-------------------->
+
+            <!--------------------BLOCK ANALYTICS TWO END-------------------->
         </section>
 
 
