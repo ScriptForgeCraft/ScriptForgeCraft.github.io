@@ -452,13 +452,56 @@
   height: auto;
 }
 
-.analytics-chart canvas {
-  width: 100% !important;
-  height: 100% !important;
-  max-height: 500px;
-  background-color: blue;
+/* ===========================================
+test
+=========================================== */
+
+.analytics-chart {
+  width: 100%;
+  height: 420px; /* нужна фиксированная высота */
+  position: relative;
 }
 
+#salesChart {
+  width: 100% !important;
+  height: 100% !important;
+}
+.analytics-chart {
+  width: 100%;
+  height: 420px;
+  position: relative;
+}
+
+/* Канвас */
+#salesChart {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* ----- Годы сверху ----- */
+.chart-years {
+  position: absolute;
+  top: -40px;           /* смещение вверх */
+  left: 0;
+  right: 0;
+
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);  /* 6 лет = 6 колонок */
+  text-align: center;
+  color: #cbb488;        /* золотой */
+  font-family: "Playfair Display", serif;
+  font-size: 1.25rem;
+  pointer-events: none; /* чтобы не мешало кликам по графику */
+}
+
+.chart-years span {
+  opacity: 0.9;
+}
+
+ 
+/* ===========================================
+test end
+=========================================== */
 /* ===========================================
    ANALYTICS BLOCK END
 =========================================== */
@@ -467,17 +510,16 @@
    ANALYTICS DETAILS BLOCK   
 =========================================== */
 
-.analytics-details-display{
+.analytics-details-display {
   display: flex;
   flex-direction: column;
 }
 
-.analytics-details-col-right{
- 
+.analytics-details-col-right {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  & P{
+  & P {
     width: 50%;
   }
 }

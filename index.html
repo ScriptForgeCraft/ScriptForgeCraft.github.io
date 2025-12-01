@@ -21,6 +21,12 @@
     <link rel="stylesheet" href="src/prospekt24/style.css">
     <link rel="stylesheet" href="src/dhomie/style.css">
 
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+    <script src="./src/dignisi/js/salesChart.js"></script>
+
+
     <title>Dignisi</title>
 </head>
 
@@ -613,8 +619,21 @@
 
 
                         <div class="analytics-chart">
+
+                            <!-- надписи годов -->
+                            <div class="chart-years">
+                                <span>2020</span>
+                                <span>2021</span>
+                                <span>2022</span>
+                                <span>2023</span>
+                                <span>2024</span>
+                                <span>2025</span>
+                            </div>
+
+                            <!-- сам график -->
                             <canvas id="salesChart"></canvas>
                         </div>
+
                     </div>
                 </div>
 
@@ -768,7 +787,10 @@
                     </h2>
                 </header>
 
-
+                <h2>The average apartment prices during the years 2020–2025</h2>
+                <div class="analytics-prices-chart">
+                    <img src="src/dignisi/images/price-chart.png" alt="Apartment price chart">
+                </div>
 
             </div>
 
@@ -801,7 +823,19 @@
                         Dignisi Analytics (2020–2025)
                     </h2>
                 </header>
+                <h2>Over the past five years, the chart below presents the sales share for 2024–2025 achieved by Dignisi
+                    Company.</h2>
 
+                <div class="chart-sales">
+                    <div class="chart-yerevan">
+                        <img src="src/dignisi/images/yerevan.png" alt="Yerevan">
+                        <h2>YEREVAN</h2>
+                    </div>
+                    <div class="chart-abovyan">
+                        <img src="src/dignisi/images/aboyan.png" alt="Abovyan">
+                        <h2>ABOVYAN</h2>
+                    </div>
+                </div>
 
 
             </div>
@@ -840,7 +874,19 @@
 
 
                 </header>
-
+                <div class="vision-left-block">
+                    <h2>Our Vision</h2>
+                    <p>To become a global benchmark in real estate solutions, offering innovative, high-quality,
+                        and reliable services that create lasting value and trust. We strive to provide every client
+                        with an accessible, seamless, and knowledge-enriched experience, setting new
+                        standards across markets worldwide.</p>
+                </div>
+                <div class="vision-right-block">
+                    <h2>Our Mission</h2>
+                    <p>To provide exceptional real estate services that inspire trust, deliver value, and create a
+                        seamless, rewarding
+                        experience for every client.</p>
+                </div>
 
 
             </div>
