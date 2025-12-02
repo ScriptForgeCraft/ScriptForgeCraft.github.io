@@ -539,3 +539,26 @@
 /* ===========================================
     block analytics-prices END
 =========================================== */
+
+/* ===========================================
+    block analytics-regional-share
+=========================================== */
+.pie-wrap {
+  width: 260px;
+  height: 260px;
+  margin: 0 auto 40px;
+  position: relative;
+}
+
+.pie-wrap canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+
+
+
+
+/* ===========================================
+    block analytics-regional-share END
+=========================================== */
