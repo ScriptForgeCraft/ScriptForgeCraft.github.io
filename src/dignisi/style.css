@@ -453,54 +453,40 @@
 }
 
 /* ===========================================
-test
+      analytics-chart
 =========================================== */
 
-.analytics-chart {
-  width: 100%;
-  height: 420px; /* нужна фиксированная высота */
-  position: relative;
-}
-
-#salesChart {
-  width: 100% !important;
-  height: 100% !important;
-}
 .analytics-chart {
   width: 100%;
   height: 420px;
   position: relative;
 }
 
-/* Канвас */
 #salesChart {
   width: 100% !important;
   height: 100% !important;
 }
 
-/* ----- Годы сверху ----- */
 .chart-years {
   position: absolute;
-  top: -40px;           /* смещение вверх */
-  left: 0;
+  top: -40px;  
+  left: 20px;
   right: 0;
 
   display: grid;
-  grid-template-columns: repeat(6, 1fr);  /* 6 лет = 6 колонок */
+  grid-template-columns: repeat(6, 1fr);  
   text-align: center;
-  color: #cbb488;        /* золотой */
+  color: #cbb488;  
   font-family: "Playfair Display", serif;
   font-size: 1.25rem;
-  pointer-events: none; /* чтобы не мешало кликам по графику */
+  pointer-events: none; 
 }
-
 .chart-years span {
   opacity: 0.9;
 }
 
- 
 /* ===========================================
-test end
+    analytics-chart END
 =========================================== */
 /* ===========================================
    ANALYTICS BLOCK END
