@@ -25,6 +25,8 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
     <script src="./src/dignisi/js/salesChart.js"></script>
+    <script src="./src/dignisi/js/pricesChart.js"></script>
+
 
 
     <title>Dignisi</title>
@@ -786,8 +788,11 @@
                 </header>
 
                 <h2>The average apartment prices during the years 2020–2025</h2>
-                <div class="analytics-prices-chart">
-                    <img src="src/dignisi/images/price-chart.png" alt="Apartment price chart">
+
+                <div class="analytics-chart-scroll">
+                    <div class="analytics-chart-area">
+                        <canvas id="pricesChart"></canvas>
+                    </div>
                 </div>
 
             </div>
