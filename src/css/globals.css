@@ -25,7 +25,7 @@ img {
   min-height: 100dvh; /* mobile-correct */
   padding: 0 var(--root_padding);
   background-color: black;
-  /* border: 1px solid red; */
+  border: 1px solid red;
   color: white;
 }
 

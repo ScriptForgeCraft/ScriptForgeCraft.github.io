@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
           datalabels: {
             color: "#fff",
-            font: { size: 16, weight: "light" },
+            font: { size: 16, weight: "bold" },
 
             formatter: (value, ctx) => {
               if (value < 2) return "";
@@ -66,6 +66,6 @@ document.addEventListener("DOMContentLoaded", () => {
     animate();
   }
 
-  animatePie("pieYerevan", 28.4);
   animatePie("pieAbovyan", 9.8);
+  animatePie("pieYerevan", 28.4);
 });
