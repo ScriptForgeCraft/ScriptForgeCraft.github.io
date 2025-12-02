@@ -8,8 +8,8 @@ html {
 :root {
   --text_color_gold: #cbb488;
   --text_color_dark_gold: #514836;
-  --root_padding: 9.25rem;  
-  --root_padding_top: 3.5rem;  
+  --root_padding: 9.25rem;
+  --root_padding_top: 3.5rem;
 }
 img {
   max-width: 100%;
