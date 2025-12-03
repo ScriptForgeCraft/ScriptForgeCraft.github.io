@@ -16,17 +16,17 @@
     <link rel="stylesheet" href="src/css/normalize.css">
     <link rel="stylesheet" href="src/css/reset.css">
     <link rel="stylesheet" href="src/css/globals.css">
-
     <link rel="stylesheet" href="src/dignisi/style.css">
-    <link rel="stylesheet" href="src/prospekt24/style.css">
-    <link rel="stylesheet" href="src/dhomie/style.css">
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
     <script src="./src/dignisi/js/salesChart.js"></script>
     <script src="./src/dignisi/js/pricesChart.js"></script>
-    <script src="./src/dignisi/js/cityPieCharts.js"></script>
+    <script src="src/dignisi/js/navigation/headerScroll.js"></script>
+    <script src="src/dignisi/js/navigation/mobileMenu.js"></script>
+
 
 
 
@@ -37,7 +37,43 @@
 </head>
 
 <body>
-    <div class="page-wrapper">
+    <header class="main-header">
+        <div class="main-header__inner">
+
+            <!-- LOGO -->
+            <a href="#block-hero" class="main-header__logo">
+                <img src="src/dignisi/images/dignisi-logo.png" alt="Dignisi Logo">
+            </a>
+
+            <!-- Desktop NAV -->
+            <nav class="main-header__nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="#block-about">About</a></li>
+                    <li><a href="#block-history">History</a></li>
+                    <li><a href="#block-analytics">Analytics</a></li>
+                </ul>
+            </nav>
+
+            <!-- BURGER BUTTON -->
+            <button class="burger-btn" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+        <!-- MOBILE MENU -->
+        <nav class="mobile-menu" aria-label="Mobile navigation">
+            <ul>
+                <li><a href="#block-about">About</a></li>
+                <li><a href="#block-history">History</a></li>
+                <li><a href="#block-analytics">Analytics</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-wrapper">
 
         <section id="dignisi">
             <!--------------------BLOCK HERO -------------------->
@@ -70,27 +106,6 @@
             <!--------------------BLOCK ABOUT -------------------->
 
             <div class="block about" id="block-about">
-                <div class="block-nav">
-                    <!-- Логотип -->
-                    <div class="block-logo" aria-hidden="true">
-                        <a href="#block-hero"><img src="src/dignisi/images/dignisi-logo.png" alt="Dingisi Logo"></a>
-
-                    </div>
-
-                    <!-- Навигация -->
-                    <nav class="block-menu" aria-label="Section navigation">
-                        <ul>
-                            <li><a href="#block-about">About</a></li>
-                            <li><a href="#block-history">History</a></li>
-                            <li><a href="#block-analytics">Analytics</a></li>
-
-                        </ul>
-                    </nav>
-
-                </div>
-                <!-- КАРТИНКА ПРАВАЯ -->
-
-
 
                 <div class="about-flex">
 
@@ -159,23 +174,7 @@
 
 
             <div class="block history" id="block-history">
-                <div class="block-nav">
-                    <!-- Логотип -->
-                    <div class="block-logo" aria-hidden="true">
-                        <a href="#block-hero"><img src="src/dignisi/images/dignisi-logo.png" alt="Dingisi Logo"></a>
-                    </div>
 
-                    <!-- Навигация -->
-                    <nav class="block-menu" aria-label="Section navigation">
-                        <ul>
-                            <li><a href="#block-about">About</a></li>
-                            <li><a href="#block-history">History</a></li>
-                            <li><a href="#block-analytics">Analytics</a></li>
-
-                        </ul>
-                    </nav>
-
-                </div>
                 <div class="history-content">
 
 
@@ -214,23 +213,6 @@
             <!--------------------BLOCK PARTNERS -------------------->
 
             <div class="block partners" id="block-partners">
-                <div class="block-nav">
-                    <!-- Логотип -->
-                    <div class="block-logo" aria-hidden="true">
-                        <a href="#block-hero"><img src="src/dignisi/images/dignisi-logo.png" alt="Dingisi Logo"></a>
-                    </div>
-
-                    <!-- Навигация -->
-                    <nav class="block-menu" aria-label="Section navigation">
-                        <ul>
-                            <li><a href="#block-about">About</a></li>
-                            <li><a href="#block-history">History</a></li>
-                            <li><a href="#block-analytics">Analytics</a></li>
-
-                        </ul>
-                    </nav>
-
-                </div>
 
 
 
@@ -428,23 +410,7 @@
             <!--------------------BLOCK LOYALTY CARD-------------------->
             <div class="block loyalty-card">
 
-                <div class="block-nav">
 
-                    <div class="block-logo" aria-hidden="true">
-                        <a href="#block-hero"><img src="src/dignisi/images/dignisi-logo.png" alt="Dingisi Logo"></a>
-                    </div>
-
-
-                    <nav class="block-menu" aria-label="Section navigation">
-                        <ul>
-                            <li><a href="#block-about">About</a></li>
-                            <li><a href="#block-history">History</a></li>
-                            <li><a href="#block-analytics">Analytics</a></li>
-
-                        </ul>
-                    </nav>
-
-                </div>
                 <div class="loyalty-display">
 
 
@@ -502,23 +468,6 @@
 
             <div class="block podcast">
 
-                <div class="block-nav">
-
-                    <div class="block-logo" aria-hidden="true">
-                        <a href="#block-hero"><img src="src/dignisi/images/dignisi-logo.png" alt="Dingisi Logo"></a>
-                    </div>
-
-
-                    <nav class="block-menu" aria-label="Section navigation">
-                        <ul>
-                            <li><a href="#block-about">About</a></li>
-                            <li><a href="#block-history">History</a></li>
-                            <li><a href="#block-analytics">Analytics</a></li>
-
-                        </ul>
-                    </nav>
-
-                </div>
 
                 <div class="podcast-block">
                     <div class="podcast-text">
@@ -546,23 +495,7 @@
 
             <!--------------------BLOCK ANALYTICS-------------------->
             <div class="block analytics" id="block-analytics">
-                <div class="block-nav">
 
-                    <div class="block-logo" aria-hidden="true">
-                        <a href="#block-hero"><img src="src/dignisi/images/dignisi-logo.png" alt="Dingisi Logo"></a>
-                    </div>
-
-
-                    <nav class="block-menu" aria-label="Section navigation">
-                        <ul>
-                            <li><a href="#block-about">About</a></li>
-                            <li><a href="#block-history">History</a></li>
-                            <li><a href="#block-analytics">Analytics</a></li>
-
-                        </ul>
-                    </nav>
-
-                </div>
 
 
                 <header class="analytics-header">
@@ -659,23 +592,7 @@
 
             <!--------------------BLOCK ANALYTICS DETAILS-------------------->
             <div class="block analytics-details">
-                <div class="block-nav">
 
-                    <div class="block-logo" aria-hidden="true">
-                        <a href="#block-hero"><img src="src/dignisi/images/dignisi-logo.png" alt="Dingisi Logo"></a>
-                    </div>
-
-
-                    <nav class="block-menu" aria-label="Section navigation">
-                        <ul>
-                            <li><a href="#block-about">About</a></li>
-                            <li><a href="#block-history">History</a></li>
-                            <li><a href="#block-analytics">Analytics</a></li>
-
-                        </ul>
-                    </nav>
-
-                </div>
 
 
                 <header class="analytics-header">
@@ -764,26 +681,10 @@
 
 
 
-
+            <!--------------------BLOCK ANALYTICS  PRICES-------------------->
             <div class="block analytics-prices">
 
-                <div class="block-nav">
 
-                    <div class="block-logo" aria-hidden="true">
-                        <a href="#block-hero"><img src="src/dignisi/images/dignisi-logo.png" alt="Dingisi Logo"></a>
-                    </div>
-
-
-                    <nav class="block-menu" aria-label="Section navigation">
-                        <ul>
-                            <li><a href="#block-about">About</a></li>
-                            <li><a href="#block-history">History</a></li>
-                            <li><a href="#block-analytics">Analytics</a></li>
-
-                        </ul>
-                    </nav>
-
-                </div>
 
 
                 <header class="analytics-header">
@@ -802,28 +703,14 @@
 
             </div>
 
+            <!--------------------BLOCK ANALYTICS PRICES END-------------------->
 
 
 
+            <!--------------------BLOCK ANALYTICS REGIONAL SHARE-------------------->
             <div class="block analytics-regional-share">
 
-                <div class="block-nav">
 
-                    <div class="block-logo" aria-hidden="true">
-                        <a href="#block-hero"><img src="src/dignisi/images/dignisi-logo.png" alt="Dingisi Logo"></a>
-                    </div>
-
-
-                    <nav class="block-menu" aria-label="Section navigation">
-                        <ul>
-                            <li><a href="#block-about">About</a></li>
-                            <li><a href="#block-history">History</a></li>
-                            <li><a href="#block-analytics">Analytics</a></li>
-
-                        </ul>
-                    </nav>
-
-                </div>
 
 
                 <header class="analytics-header">
@@ -852,29 +739,13 @@
 
             </div>
 
+            <!--------------------BLOCK ANALYTICS REGIONAL SHARE END-------------------->
 
 
-
-
+            <!--------------------BLOCK  VISION MISSION-------------------->
             <div class="block vision-mission">
 
-                <div class="block-nav">
 
-                    <div class="block-logo" aria-hidden="true">
-                        <a href="#block-hero"><img src="src/dignisi/images/dignisi-logo.png" alt="Dingisi Logo"></a>
-                    </div>
-
-
-                    <nav class="block-menu" aria-label="Section navigation">
-                        <ul>
-                            <li><a href="#block-about">About</a></li>
-                            <li><a href="#block-history">History</a></li>
-                            <li><a href="#block-analytics">Analytics</a></li>
-
-                        </ul>
-                    </nav>
-
-                </div>
 
 
                 <header class="analytics-header">
@@ -905,6 +776,8 @@
 
 
             </div>
+
+            <!--------------------BLOCK VISION MISSION END-------------------->
         </section>
 
 
@@ -922,7 +795,8 @@
             <div class="block"> dhomie </div>
         </section> -->
 
-    </div>
+    </main>
+
 
 </body>
 

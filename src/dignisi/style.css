@@ -356,17 +356,13 @@
 
 .podcast {
   position: relative;
-  padding: 0;
   display: flex;
   flex-direction: column;
-  & .block-nav {
-    margin: var(--root_padding_top) 0;
-  }
+  padding: 0;
 }
-
-.podcast .block-nav,
 .podcast-text {
-  padding: 0 var(--root_padding);
+  padding-top:  var(--root_padding_top);
+  padding-left:  var(--root_padding);
 }
 .podcast-text {
   max-width: 60%;

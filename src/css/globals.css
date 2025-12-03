@@ -26,8 +26,171 @@ img {
   padding: 0 var(--root_padding);
   background-color: black;
   color: white;
+  border: 1px outset #5148362e;
+  padding-top: var(--root_padding_top);
 }
 
 .display-block {
   display: block;
+}
+/* ============================================
+   MAIN HEADER — BASE
+============================================ */
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2000;
+  padding: 1rem var(--root_padding);
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(203, 180, 136, 0.15);
+  transition: transform 0.35s ease;
+}
+
+.main-header--hidden {
+  transform: translateY(-100%);
+}
+
+.main-header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-header__logo img {
+  height: 40px;
+  max-height: 48px;
+  width: auto;
+}
+
+/* ============================================
+   DESKTOP NAV
+============================================ */
+.main-header__nav ul {
+  display: flex;
+  gap: 2rem;
+}
+
+.main-header__nav a {
+  color: var(--text_color_gold);
+  font-size: 1.1rem;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  transition: color 0.3s ease;
+}
+
+.main-header__nav a:hover {
+  color: var(--text_color_dark_gold);
+}
+
+/* ============================================
+   BURGER BUTTON (mobile only)
+============================================ */
+.burger-btn {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  width: 32px;
+  height: 24px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  z-index: 2500;
+  margin-right: 20px;
+}
+
+.burger-btn span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: var(--text_color_gold);
+  transition: 0.3s ease;
+}
+
+/* X animation */
+.burger-btn.active span:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+.burger-btn.active span:nth-child(2) {
+  opacity: 0;
+}
+.burger-btn.active span:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+/* ============================================
+   MOBILE MENU (offcanvas panel)
+============================================ */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 75%;
+  max-width: 360px;
+  height: 100vh;
+  background: #000;
+  padding: 5rem 2rem;
+  border-left: 1px solid rgba(203, 180, 136, 0.2);
+  transition: right 0.35s ease;
+  z-index: 2400;
+}
+
+.mobile-menu.open {
+  right: 0;
+}
+
+.mobile-menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.mobile-menu a {
+  color: var(--text_color_gold);
+  font-size: 1.6rem;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 0.05em;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+/* ============================================
+   RESPONSIVE RULES
+============================================ */
+
+/* TABLET + MOBILE */
+@media (max-width: 992px) {
+  .main-header {
+    padding: 0.8rem 2rem;
+  }
+
+  .main-header__nav {
+    display: none; /* скрываем desktop nav */
+  }
+
+  .burger-btn {
+    display: flex;
+  }
+}
+
+/* MOBILE  */
+@media (max-width: 600px) {
+  .mobile-menu a {
+    font-size: 1.4rem;
+  }
+
+  .main-header__logo img {
+    height: 42px;
+  }
+
+  .main-header {
+    padding: 0.8rem 1.2rem;
+  }
 }
