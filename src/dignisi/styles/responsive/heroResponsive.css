@@ -42,7 +42,7 @@
     display: flex;
     justify-content: center;
     margin-top: 10px;
-    font-size: 2.9rem;
+    font-size: 3.9rem;
   }
 
   .hero-line {
@@ -51,7 +51,7 @@
   }
 
   .hero-subtitle {
-    font-size: 0.95rem;
+    font-size: 1.4rem;
     letter-spacing: 0.07em;
   }
 }
@@ -67,7 +67,7 @@
   .big-letter {
     top: 50%;
     left: 50%;
-    opacity: 0.2;
+    opacity: 0.1;
     font-size: 45dvh;
     transform: translate(-50%, -50%);
   }
@@ -77,12 +77,14 @@
   }
 
   .hero-title {
-    font-size: 2rem;
+    font-size: 3rem;
     letter-spacing: 0.22em;
   }
 
   .hero-subtitle {
-    font-size: 0.85rem;
+    display: flex;
+    justify-content: center;
+    font-size: 1.4rem;
     letter-spacing: 0.04em;
     line-height: 1.4;
   }
@@ -93,12 +95,14 @@
 ========================================================= */
 @media (max-width: 380px) {
   .hero-title {
-    font-size: 2rem;
+    font-size: 3rem;
     letter-spacing: 0.14em;
   }
 
   .hero-subtitle {
-    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    font-size: 1.4rem;
     letter-spacing: 0.03em;
     line-height: 1.4;
   }
@@ -155,4 +159,3 @@
     font-size: 20dvh;
   }
 }
- 
