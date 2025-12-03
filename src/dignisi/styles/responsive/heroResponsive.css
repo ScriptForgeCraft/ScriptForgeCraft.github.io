@@ -67,7 +67,6 @@
   .big-letter {
     top: 50%;
     left: 50%;
-    opacity: 0.1;
     font-size: 45dvh;
     transform: translate(-50%, -50%);
   }
@@ -108,7 +107,7 @@
   }
 
   .hero-line {
-    width: 70%;
+    width: 100%;
     margin-bottom: 10px;
   }
 }
@@ -117,35 +116,25 @@
    HERO — Short Screens (max-height)
 ========================================================= */
 
-@media (max-height: 750px) {
+@media (max-height: 750px ) and (max-width: 1160px) {
   .big-letter {
     font-size: 30dvh;
+    top:24%;
   }
-  .hero-title {
-    font-size: 2.2rem;
-  }
-  .hero-subtitle {
-    font-size: 0.85rem;
-  }
+ 
+
 }
 
 @media (max-height: 600px) {
   .hero {
     padding-top: 1.5rem;
   }
-  .big-letter {
-    font-size: 25dvh;
-    opacity: 0.15;
-  }
-  .hero-title {
-    font-size: 1.9rem;
-  }
+  
+ 
   .hero-subtitle {
     font-size: 0.8rem;
   }
-  .hero-line {
-    width: 60%;
-  }
+
 }
 
 @media (max-height: 500px) {
