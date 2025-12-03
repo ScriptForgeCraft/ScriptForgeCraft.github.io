@@ -99,52 +99,86 @@
   }
 
   .hero-subtitle {
-    display: flex;
-    justify-content: center;
     font-size: 1.4rem;
     letter-spacing: 0.03em;
-    line-height: 1.4;
   }
 
   .hero-line {
-    width: 100%;
     margin-bottom: 10px;
   }
 }
 
 /* =========================================================
-   HERO — Short Screens (max-height)
+   HERO — Short Screens (height < 750)
 ========================================================= */
-
-@media (max-height: 750px ) and (max-width: 1160px) {
+@media (max-height: 750px) and (max-width: 1160px) {
   .big-letter {
     font-size: 30dvh;
-    top:24%;
+    top: 24%;
   }
- 
-
 }
 
+/* =========================================================
+   HERO — Very Short Screens (height < 600)
+========================================================= */
 @media (max-height: 600px) {
   .hero {
     padding-top: 1.5rem;
   }
-  
- 
+
   .hero-subtitle {
     font-size: 0.8rem;
   }
-
 }
 
+/* =========================================================
+   HERO — Ultra Short (height < 500)
+========================================================= */
 @media (max-height: 500px) {
   .hero-title {
     font-size: 1.6rem;
   }
+
   .hero-subtitle {
     font-size: 0.75rem;
   }
+
   .big-letter {
     font-size: 20dvh;
+  }
+}
+
+/* =========================================================
+   HERO — SAFE MODE (phones + messengers)
+   Prevent big-letter from overlapping text
+========================================================= */
+@media (max-width: 600px), (max-height: 700px) {
+  .big-letter {
+    position: static !important;
+    font-size: clamp(8rem, 50vw, 14rem) !important;
+    transform: none !important;
+    left: auto !important;
+    top: auto !important;
+  }
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .hero-text {
+    margin-left: 0 !important;
+    max-width: 90% !important;
+  }
+  .hero-line{
+    width: 100% !important;
+    margin: 5px auto !important;
   }
 }
