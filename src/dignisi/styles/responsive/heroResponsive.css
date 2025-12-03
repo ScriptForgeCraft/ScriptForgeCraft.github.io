@@ -24,16 +24,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+   
   }
 
   .big-letter {
     left: 50%;
-    top: 29%;
+    top: 25%;
     transform: translate(-50%, -50%);
     font-size: clamp(8rem, 45vw, 26rem);
   }
 
   .hero-text {
+    margin-top: 10px;
     margin-left: 0;
     max-width: 82%;
   }
@@ -62,6 +64,7 @@
 @media (max-width: 600px) {
   .hero {
     padding-top: 4rem;
+
   }
 
   .big-letter {
@@ -70,7 +73,7 @@
     font-size: 45dvh;
     transform: translate(-50%, -50%);
   }
-
+ 
   .hero-text {
     max-width: 100%;
   }
@@ -93,6 +96,7 @@
    HERO — Small Mobile (max-width: 380px)
 ========================================================= */
 @media (max-width: 380px) {
+  
   .hero-title {
     font-size: 3rem;
     letter-spacing: 0.14em;
