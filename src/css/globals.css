@@ -27,7 +27,7 @@ img {
   background-color: black;
   color: white;
   border: 1px outset #5148362e;
-  padding-top: var(--root_padding_top);
+ 
 }
 
 .display-block {

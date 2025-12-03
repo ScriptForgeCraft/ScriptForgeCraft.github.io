@@ -1,0 +1,139 @@
+/* =========================================================
+   ABOUT — LAPTOP  (max-width: 1500px)
+========================================================= */
+@media (max-width: 1500px) {
+  .about {
+    padding: 4rem var(--root_padding);
+  }
+
+  .about-text {
+    max-width: 65%;
+  }
+
+  .about-image img {
+    max-height: 70dvh;
+  }
+}
+
+/* =========================================================
+   ABOUT — TABLET  (max-width: 1160px)
+========================================================= */
+@media (max-width: 1160px) {
+  .about {
+    padding: 2rem 1rem;
+  }
+
+  .about-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+  }
+
+  .about-image {
+    position: static;
+    width: 40%;
+    margin: 1rem auto 0;
+    border-bottom: 1px solid var(--text_color_gold);
+  }
+
+  .about-image img {
+    width: 100%;
+    height: auto;
+    max-height: none !important;
+    position: static !important;
+  }
+
+  .about-text {
+    flex-direction: column;
+    max-width: 90%;
+    gap: 1.6rem;
+    margin-top: 1rem;
+  }
+
+  .about-text p {
+    font-size: 1.3rem;
+    line-height: 1.45;
+  }
+
+  .about-title span {
+    text-align: center;
+  }
+
+  .about-title span:first-child,
+  .about-title span:last-child {
+    font-size: 3rem;
+  }
+
+  .about-quote {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.15rem;
+  }
+}
+
+/* =========================================================
+   ABOUT — MOBILE (max-width: 600px)
+========================================================= */
+@media (max-width: 600px) {
+  .about {
+    padding: 1rem;
+  }
+
+  .about-title span:first-child,
+  .about-title span:last-child {
+    font-size: 2.2rem;
+    letter-spacing: 0.05em;
+  }
+
+  .about-text {
+    max-width: 95%;
+    gap: 01rem;
+  }
+
+  .about-text p {
+    font-size: 1.2rem;
+    line-height: 1.45;
+  }
+
+  .about-image {
+    width: 60%;
+    margin-top: 1.5rem;
+  }
+
+  .about-image img {
+    width: 100%;
+  }
+
+  .about-quote {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+}
+
+/* =========================================================
+   ABOUT — SMALL MOBILE (max-width: 380px)
+========================================================= */
+@media (max-width: 380px) {
+  .about {
+    padding: 0.5rem;
+  }
+
+  .about-title span:first-child,
+  .about-title span:last-child {
+    font-size: 1.8rem;
+    letter-spacing: 0.03em;
+  }
+
+  .about-text p {
+    font-size: 1rem;
+  }
+
+  .about-image {
+    width: 70%;
+  }
+
+  .about-quote {
+    font-size: 1rem;
+  }
+}
