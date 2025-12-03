@@ -20,6 +20,9 @@ img {
 /* =======================================
    FULLSCREEN BLOCKS
 ======================================= */
+.page-wrapper {
+  overflow-x: hidden;
+}
 .block {
   min-height: 100vh; /* fallback */
   min-height: 100dvh; /* mobile-correct */
@@ -27,7 +30,6 @@ img {
   background-color: black;
   color: white;
   border: 1px outset #5148362e;
- 
 }
 
 .display-block {
@@ -44,7 +46,7 @@ img {
   z-index: 2000;
   padding: 1rem var(--root_padding);
   background: rgba(0, 0, 0, 0.75);
-  
+
   backdrop-filter: blur(6px);
   border-bottom: 1px solid rgba(203, 180, 136, 0.15);
   transition: transform 0.35s ease;
@@ -173,6 +175,7 @@ body.no-scroll {
     padding: 0.8rem 2rem;
   }
 
+ 
   .main-header__nav {
     display: none; /* скрываем desktop nav */
   }
