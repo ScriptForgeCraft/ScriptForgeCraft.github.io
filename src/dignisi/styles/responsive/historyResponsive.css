@@ -13,7 +13,6 @@
     width: 35%;
     font-size: 1.05rem;
   }
-
   .quote-text {
     font-size: max(1.4rem, 2.6vw);
   }
@@ -61,11 +60,11 @@
   }
 
   .history-quote {
-    order: 2;  
+    order: 2;
   }
 
   .history-text {
-    order: 1; 
+    order: 1;
   }
 }
 
@@ -103,7 +102,7 @@
     font-size: clamp(1.8rem, 10vw, 4rem);
   }
 
-    .history-quote {
+  .history-quote {
     order: 2;
   }
 
@@ -128,8 +127,7 @@
     font-size: 0.95rem;
   }
 
-
-    .history-quote {
+  .history-quote {
     order: 2;
   }
 

@@ -1,0 +1,94 @@
+/* =========================================================
+   LOYALTY — TABLET (max-width: 992px)
+
+========================================================= */
+@media (max-width: 992px) {
+
+  .loyalty-display {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: none !important;
+  }
+
+  .left-block,
+  .right-block {
+    width: 70vw;
+  }
+
+  .right-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.2rem;
+  }
+
+  .right-block img {
+    max-width: 60vw;
+    height: auto;
+    filter: drop-shadow(0 0 70px #858585);
+  }
+
+  .left-block__text {
+    font-size: 1.35rem;
+  }
+
+  .left-block__title {
+    font-size: clamp(1.7rem, 8vw, 2.7rem);
+  }
+}
+
+
+
+
+/* =========================================================
+   LOYALTY — MOBILE (max-width: 600px)
+========================================================= */
+@media (max-width: 600px) {
+
+  .loyalty-display {
+    background: none !important;
+  }
+
+  .right-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .right-block img {
+    max-width: 68vw;
+  }
+
+  .left-block__title {
+    font-size: clamp(1.7rem, 8vw, 2.5rem);
+  }
+}
+
+
+
+
+/* =========================================================
+   LOYALTY — SMALL MOBILE (max-width: 380px)
+========================================================= */
+@media (max-width: 380px) {
+
+  .right-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .right-block img {
+    max-width: 72vw;
+  }
+
+  .left-block__text {
+    font-size: 0.87rem;
+  }
+
+  .left-block__title {
+    font-size: clamp(1.5rem, 9vw, 2.3rem);
+  }
+}
