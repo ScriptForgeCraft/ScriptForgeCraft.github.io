@@ -1,0 +1,123 @@
+/* =========================================================
+   TABLET (max-width: 1024px)
+ 
+========================================================= */
+@media (max-width: 1024px) {
+  .analytics {
+    padding: 1rem 1rem;
+  }
+  .analytics-display {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 2.5rem;
+  }
+
+  .analytics-graph {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .analytics-graph {
+    order: 1;
+  }
+
+  .analytics-content {
+    margin-top:6rem;
+    order: 2;
+  }
+
+  .analytics-chart-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+ 
+}
+
+  .analytics-chart {
+    min-width: 850px;
+  }
+
+  .chart-years {
+    font-size: 1rem;
+    top: -32px;
+  }
+}
+
+/* =========================================================
+   MOBILE (max-width: 768px)
+ 
+========================================================= */
+@media (max-width: 768px) {
+  .analytics-title {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .analytics-display {
+    row-gap: 2rem;
+  }
+
+  .analytics-content p,
+  .analytics-list li,
+  .analytics-sublist li {
+    font-size: 0.95rem;
+  }
+
+  .analytics-chart-wrapper {
+    padding-top: 35px;
+  }
+
+  .analytics-chart {
+    min-width: 780px;
+  }
+
+  .chart-years {
+    font-size: 0.9rem;
+    top: -28px;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE (max-width: 480px)
+ 
+========================================================= */
+@media (max-width: 480px) {
+  .analytics-title {
+    font-size: 1.6rem;
+    line-height: 1.3;
+  }
+
+  .analytics-content {
+    font-size: 0.9rem;
+  }
+
+  .analytics-chart {
+    min-width: 720px;
+  }
+
+  .chart-years {
+    font-size: 0.8rem;
+    top: -25px;
+  }
+}
+
+/* =========================================================
+   SMALLER MOBILE (max-width: 380px)
+========================================================= */
+@media (max-width: 380px) {
+  .analytics-chart {
+    min-width: 680px;
+  }
+
+  .chart-years {
+    font-size: 0.75rem;
+    top: -22px;
+  }
+
+  .analytics-content p,
+  .analytics-list li,
+  .analytics-sublist li {
+    font-size: 0.85rem;
+  }
+}

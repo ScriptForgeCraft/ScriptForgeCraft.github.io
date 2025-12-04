@@ -296,7 +296,6 @@
 =========================================== */
 .loyalty-card {
   padding-top: var(--root_padding_top);
-  
 }
 
 .loyalty-display {
@@ -396,8 +395,17 @@
 /* ===========================================
    ANALYTICS BLOCK 
 =========================================== */
-.analytics .block-nav {
-  padding: var(--root_padding_top) 0;
+
+
+.analytics {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.analytics-display {
+  padding: 2rem 0;
 }
 .analytics-title {
   display: flex;
@@ -439,7 +447,7 @@
 }
 
 .analytics-note {
-  width: 50%;
+  width: 70%;
 }
 
 .analytics-note hr {
@@ -450,15 +458,14 @@
   margin: 1.5rem 0;
 }
 
+/* ===========================================
+      analytics-chart
+=========================================== */
 /* RIGHT SIDE — CHART */
 .analytics-chart {
   width: 100%;
   height: auto;
 }
-
-/* ===========================================
-      analytics-chart
-=========================================== */
 
 .analytics-chart {
   width: 100%;
@@ -487,6 +494,46 @@
 }
 .chart-years span {
   opacity: 0.9;
+}
+
+/* Scroll container for mobile */
+.analytics-chart-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: visible;
+
+  padding-bottom: 1rem;
+  
+  transform: translateY(20%);
+}
+.analytics-chart-wrapper {
+  padding-top: 40px;
+}
+
+.analytics-chart {
+  min-width: 950px;
+}
+ 
+/* ===========================================
+   BEAUTIFUL GOLD SCROLLBAR — DIGNISI STYLE
+=========================================== */
+
+.analytics-chart-wrapper::-webkit-scrollbar {
+  height: 6px; /* тонкий */
+}
+
+.analytics-chart-wrapper::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.04); /* лёгкая тень */
+  border-radius: 10px;
+}
+
+.analytics-chart-wrapper::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, #bea06e, #cbb488); /* gold gradient */
+  border-radius: 10px;
+}
+
+.analytics-chart-wrapper::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(90deg, #d7c3a0, #e6d7b9); /* мягкий hover */
 }
 
 /* ===========================================
