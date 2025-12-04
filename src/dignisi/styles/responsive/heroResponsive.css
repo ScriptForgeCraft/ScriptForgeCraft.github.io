@@ -1,19 +1,20 @@
-/* =========================================================
-   HERO — Laptop (max-width: 1600px)
-========================================================= */
+/* ============================================
+   HERO — LAPTOP (max-width: 1600px)
+============================================ */
 @media (max-width: 1600px) {
   .big-letter {
     left: 6%;
   }
-
   .hero-text {
     margin-left: 10%;
   }
 }
 
-/* =========================================================
-   HERO — Tablet (max-width: 1160px)
-========================================================= */
+
+
+/* ============================================
+   HERO — TABLET (max-width: 1160px)
+============================================ */
 @media (max-width: 1160px) {
   .hero {
     justify-content: center;
@@ -24,18 +25,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-   
   }
 
   .big-letter {
     left: 50%;
-    top: 25%;
+    top: 35%;
     transform: translate(-50%, -50%);
     font-size: clamp(8rem, 45vw, 26rem);
   }
 
   .hero-text {
-    margin-top: 10px;
+    margin-top: 14rem;
     margin-left: 0;
     max-width: 82%;
   }
@@ -58,131 +58,125 @@
   }
 }
 
-/* =========================================================
-   HERO — Mobile (max-width: 600px)
-========================================================= */
+
+
+/* ============================================
+   HERO — MOBILE (max-width: 600px)
+   ✔ D по центру
+   ✔ Текст снизу слева
+============================================ */
 @media (max-width: 600px) {
-  .hero {
-    padding-top: 4rem;
-
-  }
-
   .big-letter {
-    top: 50%;
-    left: 50%;
-    font-size: 45dvh;
-    transform: translate(-50%, -50%);
-  }
- 
-  .hero-text {
-    max-width: 100%;
-  }
-
-  .hero-title {
-    font-size: 3rem;
-    letter-spacing: 0.22em;
-  }
-
-  .hero-subtitle {
+    position: static;
+    transform: none;
     display: flex;
     justify-content: center;
-    font-size: 1.4rem;
-    letter-spacing: 0.04em;
-    line-height: 1.4;
+    align-items: center;
+    margin: 0 auto;
+    font-size: clamp(10rem, 60vh, 22rem);
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 0 0 1rem 1rem;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-text {
+    margin: 0;
+    padding: 0;
+    max-width: 90%;
   }
 }
 
-/* =========================================================
-   HERO — Small Mobile (max-width: 380px)
-========================================================= */
+
+
+/* ============================================
+   HERO — SMALL MOBILE (max-width: 380px)
+============================================ */
 @media (max-width: 380px) {
-  
+  .big-letter {
+    font-size: clamp(8rem, 50vh, 15rem);
+  }
   .hero-title {
-    font-size: 3rem;
-    letter-spacing: 0.14em;
+    font-size: 2.2rem;
   }
-
   .hero-subtitle {
-    font-size: 1.4rem;
-    letter-spacing: 0.03em;
-  }
-
-  .hero-line {
-    margin-bottom: 10px;
+    font-size: 0.95rem;
   }
 }
 
-/* =========================================================
-   HERO — Short Screens (height < 750)
-========================================================= */
-@media (max-height: 750px) and (max-width: 1160px) {
+
+
+/* ============================================
+   HERO — HEIGHT RULES FOR PHONES
+   (оставлены, но очищены конфликты)
+============================================ */
+
+@media (max-width: 600px) and (max-height: 750px) {
+  .big-letter {
+    font-size: clamp(8rem, 45vh, 20rem);
+  }
+}
+
+@media (max-width: 600px) and (max-height: 550px) {
+  .big-letter {
+    font-size: clamp(8rem, 90vh, 25rem);
+  }
+}
+
+@media (max-width: 600px) and (max-height: 420px) {
+  .hero-content {
+    padding-top: 10rem;
+  }
+  .hero-title {
+    font-size: 1.6rem;
+  }
+  .hero-subtitle {
+    font-size: 0.75rem;
+  }
+  .big-letter {
+    font-size: 20vh;
+  }
+}
+
+
+
+/* ============================================
+   HERO — HEIGHT RULES (НЕ телефоны)
+============================================ */
+
+@media (min-width: 601px) and (max-height: 750px) and (width <= 1160px) {
   .big-letter {
     font-size: 30dvh;
     top: 24%;
   }
 }
 
-/* =========================================================
-   HERO — Very Short Screens (height < 600)
-========================================================= */
-@media (max-height: 600px) {
+@media (min-width: 601px) and (max-height: 600px) {
   .hero {
     padding-top: 1.5rem;
   }
-
   .hero-subtitle {
     font-size: 0.8rem;
   }
 }
 
-/* =========================================================
-   HERO — Ultra Short (height < 500)
-========================================================= */
-@media (max-height: 500px) {
+@media (min-width: 601px) and (max-height: 500px) and (width <= 1160px) {
   .hero-title {
     font-size: 1.6rem;
   }
-
   .hero-subtitle {
     font-size: 0.75rem;
   }
-
   .big-letter {
     font-size: 20dvh;
-  }
-}
-
-/* =========================================================
-   HERO — SAFE MODE (phones + messengers)
-   Prevent big-letter from overlapping text
-========================================================= */
-@media (max-width: 600px), (max-height: 700px) {
-  .big-letter {
-    position: static !important;
-    font-size: clamp(8rem, 50vw, 14rem) !important;
-    transform: none !important;
-    left: auto !important;
-    top: auto !important;
-  }
-  .hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .hero-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-  }
-
-  .hero-text {
-    margin-left: 0 !important;
-    max-width: 90% !important;
-  }
-  .hero-line{
-    width: 100% !important;
-    margin: 5px auto !important;
   }
 }
