@@ -1,5 +1,5 @@
 /* =========================================================
-   PARTNERS — LAPTOP & ниже (max-width: 1400px)
+   PARTNERS — LAPTOP & BELOW (max-width: 1400px)
 ========================================================= */
 @media (max-width: 1400px) {
 
@@ -14,35 +14,23 @@
     grid-template-columns: 1fr;
     row-gap: 2.5rem;
     justify-items: center;
-    min-width: 0;
   }
 
-  /* карта — чуть меньше логотипов */
   .partners-map__map img {
     max-width: min(60vw, 520px);
   }
 
-  /* ЛЕНТА ЛОГОТИПОВ — 70% ширины страницы */
   .partners-map__logos {
-    position: relative;
-
     display: flex;
     flex-wrap: nowrap;
     gap: 1rem;
 
-    width: 100%;
-    max-width: min(70vw, 900px);  
-    min-width: 0;
-
-    margin: 0 auto;
-
+    max-width: min(70vw, 900px);
     overflow-x: auto;
-    overflow-y: hidden;
 
     padding: 0.75rem 0;
 
     scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
   }
 
   .partners-map__logos a {
@@ -51,64 +39,74 @@
   }
 
   .partners-map__logos a img {
-    width: 64px;
-    height: 64px;
+    width: 80px;
+    height: 80px;
     object-fit: cover;
   }
-
-  .partners-map__subtitle {
-    text-align: center;
-    max-width: 600px;
-    margin: 0 auto;
-  }
 }
+
+
+
 
 /* =========================================================
    PARTNERS — TABLET (max-width: 992px)
 ========================================================= */
 @media (max-width: 992px) {
 
-  .partners-map__map img {
-    max-width: min(65vw, 460px);
+  .partners-map__logos {
+    max-width: 90vw;
+    padding-bottom: 1rem;
+    gap: 1rem;
   }
 
-  .partners-map__logos {
-    max-width: min(70vw, 700px); 
-    gap: 0.9rem;
+  .partners-map__logos a {
+    flex: 0 0 auto;
   }
 
   .partners-map__logos a img {
-    width: 56px;
-    height: 56px;
+    width: 95px;
+    height: 95px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .partners-map__logos::-webkit-scrollbar {
+    height: 10px;
   }
 }
+
+
+
 
 /* =========================================================
    PARTNERS — MOBILE (max-width: 600px)
 ========================================================= */
 @media (max-width: 600px) {
 
-  .partners-map__map img {
-    max-width: 75vw;
+  .partners-map__logos {
+    max-width: 100vw;
+    gap: 1rem;
+    padding-bottom: 1.2rem;
   }
 
-  .partners-map__logos {
-    max-width: 75vw;   
-    gap: 0.7rem;
+  .partners-map__logos a {
+    flex: 0 0 auto;
   }
 
   .partners-map__logos a img {
-    width: 52px;
-    height: 52px;
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 8px;
   }
 
-  .partners-map__subtitle {
-    font-size: 0.8rem;
-    text-align: center;
-    max-width: 85vw;
-    margin: 0 auto;
+  .partners-map__logos::-webkit-scrollbar {
+    height: 10px;
   }
 }
+
+
+
 
 /* =========================================================
    PARTNERS — SMALL MOBILE (max-width: 380px)
@@ -116,16 +114,16 @@
 @media (max-width: 380px) {
 
   .partners-map__logos {
-    max-width: 85vw;
-    gap: 0.6rem;
+    max-width: 100vw;
+    gap: 0.8rem;
+  }
+
+  .partners-map__logos a {
+    flex: 0 0 auto;
   }
 
   .partners-map__logos a img {
-    width: 48px;
-    height: 48px;
-  }
-
-  .partners-map__subtitle {
-    font-size: 0.75rem;
+    width: 90px;
+    height: 90px;
   }
 }
