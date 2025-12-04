@@ -17,6 +17,13 @@ img {
   display: block;
 }
 
+@font-face {
+  font-family: "HelloJanuary";
+  src: url("../fonts/Hello_January_script_cyrillic_Script.otf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
 /* =======================================
    FULLSCREEN BLOCKS
 ======================================= */
@@ -175,7 +182,6 @@ body.no-scroll {
     padding: 0.8rem 2rem;
   }
 
- 
   .main-header__nav {
     display: none; /* скрываем desktop nav */
   }
@@ -201,7 +207,7 @@ body.no-scroll {
 }
 @media (max-width: 600px) {
   .main-header {
-    padding: 0.6rem 1rem; /* меньше паддинги */
+    padding: 0.6rem 1rem;
   }
 
   .main-header__inner {
@@ -211,14 +217,12 @@ body.no-scroll {
     width: 100%;
   }
 
-  /* Логотип — ограничение ширины + auto-scale */
   .main-header__logo img {
-    height: 32px;          /* меньше высота */
-    max-width: 120px;      /* чтобы не растягивался */
+    height: 32px;
+    max-width: 120px;
     width: auto;
   }
 
-  /* Бургер — тоже уменьшаем */
   .burger-btn {
     width: 26px;
     height: 20px;
@@ -231,7 +235,6 @@ body.no-scroll {
   }
 }
 
-
 /* ============================================
    TABLET + MOBILE (max-width: 992px)
 ============================================ */
@@ -241,7 +244,7 @@ body.no-scroll {
   }
 
   .main-header__nav {
-    display: none; /* скрываем desktop nav */
+    display: none;
   }
 
   .burger-btn {

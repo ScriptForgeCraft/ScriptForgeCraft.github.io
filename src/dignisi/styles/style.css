@@ -182,11 +182,20 @@
   font-size: 3.5rem;
   text-align: center;
   color: var(--text_color_gold);
+  font-family: "HelloJanuary", cursive;
+
+  font-weight: 100;
 }
 .history-quote {
   display: flex;
   flex-direction: column;
   justify-content: end;
+}
+.quote-text {
+  font-size: 2rem;
+  text-align: right;
+  font-family: "HelloJanuary", cursive;
+  font-weight: 100;
 }
 
 /* ===========================================
@@ -361,8 +370,8 @@
   padding: 0;
 }
 .podcast-text {
-  padding-top:  var(--root_padding_top);
-  padding-left:  var(--root_padding);
+  padding-top: var(--root_padding_top);
+  padding-left: var(--root_padding);
 }
 .podcast-text {
   max-width: 60%;
@@ -577,6 +586,11 @@
   }
 }
 
+.our-vision {
+  font-size: 5rem;
+  font-weight: lighter;
+  font-family: "HelloJanuary", sans-serif;
+}
 /* ===========================================
    block vision-mission END
 =========================================== */
