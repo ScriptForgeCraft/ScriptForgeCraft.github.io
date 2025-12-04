@@ -396,7 +396,6 @@
    ANALYTICS BLOCK 
 =========================================== */
 
-
 .analytics {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -503,7 +502,7 @@
   overflow-y: visible;
 
   padding-bottom: 1rem;
-  
+
   transform: translateY(20%);
 }
 .analytics-chart-wrapper {
@@ -513,7 +512,7 @@
 .analytics-chart {
   min-width: 950px;
 }
- 
+
 /* ===========================================
    BEAUTIFUL GOLD SCROLLBAR — DIGNISI STYLE
 =========================================== */
@@ -546,18 +545,45 @@
 /* ===========================================
    ANALYTICS DETAILS BLOCK   
 =========================================== */
+.analytics-details{
+  padding-top: 4rem;
+  padding-bottom: 1rem;
+}
+.analytics-details-col-left {
+  width: 50%;
+}
+.analytics-details-divider {
+  height: 1px;
+  border: none;
+  width: 100%;
 
+  background-color: var(--text_color_gold);
+}
 .analytics-details-display {
   display: flex;
   flex-direction: column;
+  gap: 3.5rem;
 }
 
 .analytics-details-col-right {
+  width: 95%;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
   & P {
     width: 50%;
+  }
+  .analytics-details-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+  }
+  .details-divider {
+    margin: 0;
+    height: 1px;
+    border: none;
+    width: 50%;
+    background-color: var(--text_color_gold);
   }
 }
 
