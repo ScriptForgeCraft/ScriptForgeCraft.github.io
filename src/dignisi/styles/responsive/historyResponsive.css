@@ -1,0 +1,139 @@
+/* =========================================================
+   HISTORY — Laptop (max-width: 1500px)
+========================================================= */
+@media (max-width: 1500px) {
+  .history {
+    background-size: 130%;
+    background-position: 90% 20%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .history-text {
+    width: 35%;
+    font-size: 1.05rem;
+  }
+
+  .quote-text {
+    font-size: max(1.4rem, 2.6vw);
+  }
+}
+
+/* =========================================================
+   HISTORY — Tablet (max-width: 1160px)
+========================================================= */
+@media (max-width: 1160px) {
+  .history {
+    background-size: cover;
+    background-position: center;
+    padding: 2rem 1rem;
+  }
+
+  .history-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .history-quote {
+    align-items: center;
+    text-align: center;
+  }
+
+  .quote-text {
+    text-align: center;
+    font-size: max(1.6rem, 4vw);
+  }
+
+  .history-text {
+    width: 80%;
+    text-align: center;
+    font-size: 1.15rem;
+  }
+
+  .history-title {
+    text-align: center;
+    font-size: clamp(2rem, 9vw, 6rem);
+  }
+
+  .history-content {
+    flex-direction: column;
+  }
+
+  .history-quote {
+    order: 2;  
+  }
+
+  .history-text {
+    order: 1; 
+  }
+}
+
+/* =========================================================
+   HISTORY — Mobile (max-width: 600px)
+========================================================= */
+@media (max-width: 600px) {
+  .history {
+    padding: 1.5rem 1rem;
+    background-size: 220%;
+    background-position: 60% 20%;
+  }
+
+  .history-content {
+    gap: 1.5rem;
+  }
+
+  .history-quote {
+    margin-top: 0.5rem;
+  }
+
+  .quote-text {
+    font-size: clamp(1.2rem, 6vw, 2.5rem);
+    line-height: 1.2;
+  }
+
+  .history-text {
+    width: 100%;
+    font-size: 1.05rem;
+    text-align: left;
+  }
+
+  .history-title {
+    text-align: left;
+    font-size: clamp(1.8rem, 10vw, 4rem);
+  }
+
+    .history-quote {
+    order: 2;
+  }
+
+  .history-text {
+    order: 1;
+  }
+}
+
+/* =========================================================
+   HISTORY — Small Mobile (max-width: 380px)
+========================================================= */
+@media (max-width: 380px) {
+  .quote-text {
+    font-size: clamp(1.1rem, 7vw, 2rem);
+  }
+
+  .history-title {
+    font-size: clamp(1.6rem, 12vw, 3rem);
+  }
+
+  .history-text p {
+    font-size: 0.95rem;
+  }
+
+
+    .history-quote {
+    order: 2;
+  }
+
+  .history-text {
+    order: 1;
+  }
+}

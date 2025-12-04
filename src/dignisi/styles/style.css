@@ -150,7 +150,7 @@
 =========================================== */
 
 /* ===========================================
-   HISTORY BLOCK +
+   HISTORY BLOCK 
 =========================================== */
 .history {
   position: relative;
@@ -174,16 +174,14 @@
 .history-text {
   width: 25%;
   text-align: justify;
-  font-family: "Inter", sans-serif;
   font-size: 1rem;
 }
 
 .history-title {
-  font-size: 3.5rem;
-  text-align: center;
+  font-size: clamp(2rem, 6vw, 12rem);
+  text-align: left;
   color: var(--text_color_gold);
   font-family: "HelloJanuary", cursive;
-
   font-weight: 100;
 }
 .history-quote {
@@ -192,7 +190,7 @@
   justify-content: end;
 }
 .quote-text {
-  font-size: 2rem;
+  font-size: max(1.5rem, 3vw);
   text-align: right;
   font-family: "HelloJanuary", cursive;
   font-weight: 100;
