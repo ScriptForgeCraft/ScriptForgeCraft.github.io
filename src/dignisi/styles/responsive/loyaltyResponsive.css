@@ -3,13 +3,16 @@
 
 ========================================================= */
 @media (max-width: 992px) {
-
+ 
   .loyalty-display {
     flex-direction: column;
     align-items: center;
     margin: 0 !important;
     padding: 0 !important;
     background: none !important;
+    & p{
+      font-weight: 200;
+    }
   }
 
   .left-block,
