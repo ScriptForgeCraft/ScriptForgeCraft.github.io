@@ -3,7 +3,9 @@
 ========================================================== */
 @media (max-width: 1280px) {
   .analytics-details {
-    padding: 0;
+  
+    padding: 0 var(--root_padding);
+
   }
   .analytics-details {
     padding-top: 3rem;
@@ -23,6 +25,11 @@
    TABLETS HORIZONTAL (max-width: 1024px)
 ========================================================== */
 @media (max-width: 1024px) {
+    .analytics-details {
+  
+    padding: 0  1rem;
+
+  }
   .analytics-details-col-left {
     width: 75%;
   }
