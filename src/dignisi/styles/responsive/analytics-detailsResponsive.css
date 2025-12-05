@@ -3,6 +3,9 @@
 ========================================================== */
 @media (max-width: 1280px) {
   .analytics-details {
+    padding: 0;
+  }
+  .analytics-details {
     padding-top: 3rem;
   }
   .analytics-details-col-left {
