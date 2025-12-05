@@ -594,7 +594,6 @@
     block analytics-prices
 =========================================== */
 
-
 .analytics-prices {
   display: flex;
   flex-direction: column;
@@ -602,7 +601,6 @@
   padding-top: 2rem;
 }
 
- 
 .analytics-prices .analytics-subtitle {
   font-size: clamp(1.1rem, 1.6vw, 1.6rem);
   font-weight: 400;
@@ -610,22 +608,19 @@
   padding: 2rem 0;
 }
 
- 
 .prices-chart-container {
   width: 100%;
   overflow-x: auto;
   padding-bottom: 1rem;
 }
 
- 
 .analytics-chart-area {
   min-width: 950px;
   max-width: 1300px;
   margin: 0 auto;
-  padding: 0 1rem; 
+  padding: 0 1rem;
 }
 
- 
 .analytics-chart-area canvas {
   display: block;
   width: 100% !important;
@@ -661,14 +656,107 @@
 /* ===========================================
     block analytics-regional-share
 =========================================== */
+.analytics-title {
+  padding: 2rem 0;
+}
+
+.analytics-regional-subtitle {
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+  font-weight: lighter;
+}
+
 .chart-sales {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  gap: 7rem;
+}
 
-  & > div {
-    text-align: center;
-  }
+.pieYerevan,
+.pieAbovyan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ============================================
+   BASE PIE STYLE 
+============================================ */
+.Pie-Yerevan,
+.Pie-Abovyan {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  position: relative;
+
+  background-size: 100% 100%;
+  transform: rotateY(180deg);
+  overflow: visible;
+}
+
+.percent-big,
+.percent-small {
+  position: absolute;
+  transform: rotateY(180deg);
+  color: white;
+  font-size: 0.9rem;
+}
+
+/* ============================================
+   YEREVAN (71.6% big — 28.4% small)
+============================================ */
+.Pie-Yerevan {
+  background-image: conic-gradient(
+    #aa8c5a 0deg,
+    #aa8c5a calc(71.6 * 3.6deg),
+    #785a32 calc(71.6 * 3.6deg)
+  );
+}
+
+.pieYerevan .percent-big {
+  right: -10px;
+  bottom: 30px;
+}
+
+.pieYerevan .percent-small {
+  left: -5px;
+  top: 25px;
+}
+
+/* ============================================
+   ABOVYAN (90.2% big — 9.8% small)
+============================================ */
+.Pie-Abovyan {
+  background-image: conic-gradient(
+    #aa8c5a 0deg,
+    #aa8c5a calc(90.2 * 3.6deg),
+    #785a32 calc(90.2 * 3.6deg)
+  );
+}
+
+.pieAbovyan .percent-big {
+  right: 70px;
+  bottom: -20px;
+}
+
+.pieAbovyan .percent-small {
+  left: 70px;
+  top: -15px;
+}
+
+/* ============================================
+   CITY TITLE
+============================================ */
+.city-title {
+  margin-top: 1.6rem;
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  color: #cda631;
 }
 
 /* ===========================================
