@@ -2,6 +2,10 @@
    PARTNERS — LAPTOP & BELOW (max-width: 1400px)
 ========================================================= */
 @media (max-width: 1400px) {
+
+  .partners-map__subtitle{
+   text-align: center;
+  }
   .partners-map__logos {
     position: relative;
     display: flex;
@@ -17,7 +21,6 @@
     mask-size: 100% 100%;
     mask-repeat: no-repeat;
   }
-
   .partners-map__logos a img {
     filter: none !important;
   }
@@ -29,6 +32,7 @@
     grid-template-columns: 1fr;
     row-gap: 2.5rem;
     justify-items: center;
+    padding-bottom: 1rem;
   }
 
   .partners-map__map img {
@@ -110,6 +114,9 @@
   .partners-map__logos::-webkit-scrollbar {
     height: 10px;
   }
+    .grid-container{
+      padding-bottom: 0;
+    }
 }
 
 /* =========================================================
