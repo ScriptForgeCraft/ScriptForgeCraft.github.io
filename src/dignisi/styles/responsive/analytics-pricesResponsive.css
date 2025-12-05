@@ -1,4 +1,7 @@
 @media (max-width: 1440px) {
+  .analytics-title{
+    padding: 1rem;
+  }
   .analytics-prices {
     padding: 0 1rem;
     padding-top: 1.5rem;
@@ -42,30 +45,24 @@
     padding-bottom: 0.8rem;
   }
 }/* ==========================================================
-   MOBILE (max-width: 768px) — ТОЛЬКО для телефонов
-   Десктоп не трогаем вообще
+   MOBILE (max-width: 768px) 
 ========================================================== */
 @media (max-width: 768px) {
-  /* Чуть компактнее заголовок и по центру */
   .analytics-prices .analytics-subtitle {
     text-align: center;
     font-size: clamp(1rem, 4vw, 1.3rem);
     padding: 1.5rem 1.25rem 1.75rem;
   }
 
-  /* ГЛАВНОЕ: делаем область графика ШИРЕ, чем на десктопе,
-     чтобы точки растянулись по оси X и появился нормальный скролл */
   .analytics-chart-area {
-    min-width: 750px;      /* было 950, стало 1200 → диаграмма "растянута" */
-    padding: 0 0.5rem;      /* можно и 0, если хочешь ещё шире */
+    min-width: 750px;      
+    padding: 0 0.5rem;    
   }
 
-  /* ГЛАВНОЕ №2: делаем график ВЫШЕ по вертикали */
   .analytics-chart-area canvas {
-    height: 480px !important;  /* попробуй 280–320px, подбери по вкусу */
+    height: 480px !important;  
   }
 
-  /* Чуть воздуха снизу, чтобы не прилипал к следующему блоку */
   .prices-chart-container {
     margin-bottom: 1.5rem;
   }

@@ -78,6 +78,10 @@
    MOBILE LARGE (max-width: 576px)
 ========================================================== */
 @media (max-width: 576px) {
+  .analytics-details{
+  
+    padding-bottom:  1rem;
+  }
   .analytics-details-col-left p,
   .analytics-details-col-right p {
     width: 90%;
