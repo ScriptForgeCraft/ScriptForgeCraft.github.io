@@ -1,0 +1,92 @@
+@media (max-width: 1440px) {
+  .analytics-prices {
+    padding: 0 1rem;
+    padding-top: 1.5rem;
+  }
+
+  .analytics-prices .analytics-subtitle {
+    font-size: clamp(1.4rem, 1.4vw, 1.5rem);
+  }
+
+  .analytics-chart-area {
+    min-width: 900px;
+  }
+}
+@media (max-width: 1280px) {
+  .analytics-prices {
+    padding-top: 1.2rem;
+  }
+
+  .analytics-prices .analytics-subtitle {
+    font-size: clamp(1.4rem, 1.3vw, 1.5rem);
+  }
+
+  .analytics-chart-area {
+    min-width: 850px;
+  }
+}
+@media (max-width: 1024px) {
+  .analytics-prices {
+    padding-top: 1rem;
+  }
+
+  .analytics-prices .analytics-subtitle {
+    text-align: center;
+  }
+
+  .analytics-chart-area {
+    min-width: 780px;
+  }
+
+  .prices-chart-container {
+    padding-bottom: 0.8rem;
+  }
+}
+@media (max-width: 768px) {
+  .analytics-prices .analytics-subtitle {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .analytics-chart-area {
+    min-width: 720px;
+    padding: 0;
+  }
+}
+@media (max-width: 576px) {
+  .analytics-prices {
+    padding-top: 0.5rem;
+  }
+
+  .analytics-prices .analytics-subtitle {
+    font-size: 1.3rem;
+    line-height: 1.4;
+  }
+
+  .analytics-chart-area {
+    min-width: 650px;
+  }
+
+  .prices-chart-container::-webkit-scrollbar {
+    height: 4px;
+  }
+}
+@media (max-width: 430px) {
+  .analytics-prices .analytics-subtitle {
+    padding: 0.6rem 0;
+  }
+
+  .analytics-chart-area {
+    min-width: 600px;
+  }
+}
+@media (max-width: 380px) {
+  .analytics-prices .analytics-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .analytics-chart-area {
+    min-width: 560px;
+  }
+   
+}
