@@ -41,52 +41,32 @@
   .prices-chart-container {
     padding-bottom: 0.8rem;
   }
-}
+}/* ==========================================================
+   MOBILE (max-width: 768px) — ТОЛЬКО для телефонов
+   Десктоп не трогаем вообще
+========================================================== */
 @media (max-width: 768px) {
+  /* Чуть компактнее заголовок и по центру */
   .analytics-prices .analytics-subtitle {
-    font-size: 1.4rem;
     text-align: center;
+    font-size: clamp(1rem, 4vw, 1.3rem);
+    padding: 1.5rem 1.25rem 1.75rem;
   }
 
+  /* ГЛАВНОЕ: делаем область графика ШИРЕ, чем на десктопе,
+     чтобы точки растянулись по оси X и появился нормальный скролл */
   .analytics-chart-area {
-    min-width: 720px;
-    padding: 0;
-  }
-}
-@media (max-width: 576px) {
-  .analytics-prices {
-    padding-top: 0.5rem;
+    min-width: 750px;      /* было 950, стало 1200 → диаграмма "растянута" */
+    padding: 0 0.5rem;      /* можно и 0, если хочешь ещё шире */
   }
 
-  .analytics-prices .analytics-subtitle {
-    font-size: 1.3rem;
-    line-height: 1.4;
+  /* ГЛАВНОЕ №2: делаем график ВЫШЕ по вертикали */
+  .analytics-chart-area canvas {
+    height: 480px !important;  /* попробуй 280–320px, подбери по вкусу */
   }
 
-  .analytics-chart-area {
-    min-width: 650px;
+  /* Чуть воздуха снизу, чтобы не прилипал к следующему блоку */
+  .prices-chart-container {
+    margin-bottom: 1.5rem;
   }
-
-  .prices-chart-container::-webkit-scrollbar {
-    height: 4px;
-  }
-}
-@media (max-width: 430px) {
-  .analytics-prices .analytics-subtitle {
-    padding: 0.6rem 0;
-  }
-
-  .analytics-chart-area {
-    min-width: 600px;
-  }
-}
-@media (max-width: 380px) {
-  .analytics-prices .analytics-subtitle {
-    font-size: 1.1rem;
-  }
-
-  .analytics-chart-area {
-    min-width: 560px;
-  }
-   
 }

@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const make = (arr) => [null, ...arr, null];
 
-  // Полные данные (как у тебя было)
   const fullData = [
     make([
       428000, 428100, 445800, 529000, 607400, 644800, 633000, 737800, 837700,
@@ -26,13 +25,9 @@ document.addEventListener("DOMContentLoaded", () => {
       253300, 253300, 245000, 252000, 279000, 308000, 318900, 345600, 382700,
       407100,
     ]),
-    make([
-      282700, 283000, 270700, 286700, 318900, 335200, 325600, 382700, 426000,
-      436900,
-    ]),
+    make([null, null, null, null, null, null, null, null, 428300, 436900]),
   ];
 
- 
   const datasets = [
     {
       label: "Line 1",
@@ -41,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
       borderWidth: 3,
       pointRadius: 4,
       pointBackgroundColor: "#f2d16b",
-      tension: 0.35,
+      tension: 0.3,
       spanGaps: true,
     },
     {
@@ -61,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
       borderWidth: 3,
       pointRadius: 4,
       pointBackgroundColor: "#e7c660",
-      tension: 0.35,
+      tension: 0.3,
       spanGaps: true,
     },
     {
@@ -71,7 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
       borderWidth: 3,
       pointRadius: 4,
       pointBackgroundColor: "#b59dd7",
-      tension: 0.35,
+      tension: 0.3,
       spanGaps: true,
     },
     {
@@ -81,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
       borderWidth: 3,
       pointRadius: 4,
       pointBackgroundColor: "#d1a97a",
-      tension: 0.35,
+      tension: 0.3,
       spanGaps: true,
     },
   ];
@@ -146,9 +141,9 @@ document.addEventListener("DOMContentLoaded", () => {
           align: (ctx) => {
             const index = ctx.dataIndex;
             const line = ctx.datasetIndex;
-
+       
             if (line === 3) {
-              if (index === 1) return "left";
+              if (index === 1) return 165;
               if (index === 10) return "right";
               return "bottom";
             }
@@ -161,7 +156,16 @@ document.addEventListener("DOMContentLoaded", () => {
           offset: (ctx) => {
             const index = ctx.dataIndex;
             const line = ctx.datasetIndex;
+            if(index === 10) return 9;
 
+               if (line === 1) {
+              if (index === 0) {
+                return "left";
+              }
+              if(index === 2){
+                return  2;
+              }
+            }
             if (line === 3) {
               if (index === 1) return 12;
               if (index === 10) return 25;
