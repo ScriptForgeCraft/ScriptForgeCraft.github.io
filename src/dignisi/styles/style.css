@@ -16,7 +16,6 @@
   margin-left: 8%;
 }
 
-/* Огромная буква — D декоративный элемент */
 .big-letter {
   position: absolute;
   left: 9%;
@@ -31,7 +30,6 @@
   user-select: none;
 }
 
-/* Заголовок */
 .hero-title {
   font-size: 3.5rem;
   letter-spacing: 0.36em;
@@ -136,9 +134,7 @@
 
   font-weight: 200;
 }
-.about-text .col_right {
-  color: var(--text_color_gold);
-}
+
 
 .about-quote {
   font-style: italic;
