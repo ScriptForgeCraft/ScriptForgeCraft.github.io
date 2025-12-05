@@ -1,1 +1,116 @@
- 
+/* ==========================================================
+   STANDARD LAPTOPS (max-width: 1280px)
+========================================================== */
+@media (max-width: 1280px) {
+  .analytics-details {
+    padding-top: 3rem;
+  }
+  .analytics-details-col-left {
+    width: 70%;
+  }
+  .analytics-details-col-right p {
+    width: 60%;
+  }
+  .analytics-details-col-right .details-divider {
+    width: 60%;
+  }
+}
+
+/* ==========================================================
+   TABLETS HORIZONTAL (max-width: 1024px)
+========================================================== */
+@media (max-width: 1024px) {
+  .analytics-details-col-left {
+    width: 75%;
+  }
+  .analytics-details-col-right p {
+    width: 70%;
+  }
+  .analytics-details-col-right .details-divider {
+    width: 70%;
+  }
+}
+
+/* ==========================================================
+   TABLETS VERTICAL (max-width: 768px)
+========================================================== */
+@media (max-width: 768px) {
+  .analytics-details-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .analytics-details-col-left,
+  .analytics-details-col-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .analytics-details-col-left p,
+  .analytics-details-col-right p {
+    width: 85%;
+    text-align: center;
+  }
+  .analytics-details-divider,
+  .analytics-details-col-right .details-divider {
+    width: 85%;
+    margin: 1.3rem auto;
+  }
+  .analytics-details-block {
+    align-items: center !important;
+  }
+}
+
+/* ==========================================================
+   MOBILE LARGE (max-width: 576px)
+========================================================== */
+@media (max-width: 576px) {
+  .analytics-details-col-left p,
+  .analytics-details-col-right p {
+    width: 90%;
+    text-align: center;
+    font-size: 1rem;
+  }
+  .analytics-details-divider,
+  .analytics-details-col-right .details-divider {
+    width: 90%;
+    margin: 1.3rem auto;
+  }
+  .analytics-details-block {
+    align-items: center !important;
+    justify-content: center !important;
+  }
+}
+
+/* ==========================================================
+   MOBILE MEDIUM (max-width: 430px)
+========================================================== */
+@media (max-width: 430px) {
+  .analytics-details-col-left p,
+  .analytics-details-col-right p {
+    width: 92%;
+  }
+  .analytics-details-divider,
+  .analytics-details-col-right .details-divider {
+    width: 92%;
+    margin: 1.3rem auto;
+  }
+}
+
+/* ==========================================================
+   MOBILE SMALL (max-width: 380px)
+========================================================== */
+@media (max-width: 380px) {
+  .analytics-details-col-left p,
+  .analytics-details-col-right p {
+    width: 94%;
+  }
+  .analytics-details-divider,
+  .analytics-details-col-right .details-divider {
+    width: 94%;
+    margin: 1.3rem auto;
+  }
+}
