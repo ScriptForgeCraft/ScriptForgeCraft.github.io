@@ -495,7 +495,6 @@
   opacity: 0.9;
 }
 
-/* Scroll container for mobile */
 .analytics-chart-wrapper {
   width: 100%;
   overflow-x: auto;
@@ -545,7 +544,7 @@
 /* ===========================================
    ANALYTICS DETAILS BLOCK   
 =========================================== */
-.analytics-details{
+.analytics-details {
   padding-top: 4rem;
   padding-bottom: 1rem;
 }
@@ -595,22 +594,64 @@
     block analytics-prices
 =========================================== */
 
-.prices-chart-scroll {
+
+.analytics-prices {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-top: 2rem;
+}
+
+ 
+.analytics-prices .analytics-subtitle {
+  font-size: clamp(1.1rem, 1.6vw, 1.6rem);
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  padding: 2rem 0;
+}
+
+ 
+.prices-chart-container {
   width: 100%;
   overflow-x: auto;
-  overflow-y: hidden;
   padding-bottom: 1rem;
 }
 
-.prices-chart-container {
-  min-width: 1100px;
-  height: 520px;
-  position: relative;
+ 
+.analytics-chart-area {
+  min-width: 950px;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 1rem; 
 }
 
-#pricesChart {
+ 
+.analytics-chart-area canvas {
+  display: block;
   width: 100% !important;
-  height: 100% !important;
+  height: auto !important;
+}
+
+/* ===========================================
+   GOLD SCROLLBAR — DIGNISI SIGNATURE STYLE
+=========================================== */
+
+.prices-chart-container::-webkit-scrollbar {
+  height: 6px;
+}
+
+.prices-chart-container::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 10px;
+}
+
+.prices-chart-container::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, #bea06e, #cbb488);
+  border-radius: 10px;
+}
+
+.prices-chart-container::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(90deg, #d7c3a0, #e6d7b9);
 }
 
 /* ===========================================
