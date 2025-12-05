@@ -1,0 +1,179 @@
+/* ==========================================================
+   LARGE LAPTOPS (max-width: 1440px)
+========================================================== */
+@media (max-width: 1440px) {
+  .analytics-regional-share {
+    padding: 1rem 0;
+  }
+  .chart-sales {
+    gap: 5rem;
+  }
+
+  .Pie-Yerevan,
+  .Pie-Abovyan {
+    width: 360px;
+    height: 360px;
+  }
+}
+
+/* ==========================================================
+   STANDARD LAPTOPS (max-width: 1280px)
+========================================================== */
+@media (max-width: 1280px) {
+  .analytics-regional-subtitle {
+    font-size: 1.3rem;
+  }
+
+  .chart-sales {
+    gap: 4rem;
+  }
+
+  .Pie-Yerevan,
+  .Pie-Abovyan {
+    width: 330px;
+    height: 330px;
+  }
+
+  .city-title {
+    font-size: 1.6rem;
+  }
+}
+
+/* ==========================================================
+   TABLETS HORIZONTAL (max-width: 1024px)
+========================================================== */
+@media (max-width: 1024px) {
+  .analytics-regional-subtitle {
+    font-size: 1.2rem;
+    padding: 1.5rem 0;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  .analytics-title {
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+  }
+  .chart-sales {
+    gap: 3rem;
+  }
+
+  .Pie-Yerevan,
+  .Pie-Abovyan {
+    width: 300px;
+    height: 300px;
+  }
+
+  .city-title {
+    font-size: 1.5rem;
+  }
+}
+
+/* ==========================================================
+   TABLETS VERTICAL (max-width: 768px)
+========================================================== */
+@media (max-width: 768px) {
+  .analytics-title {
+    font-size: 1.8rem;
+  }
+  .chart-sales {
+    gap: 2rem;
+  }
+
+  .Pie-Yerevan,
+  .Pie-Abovyan {
+    width: 250px;
+    height: 250px;
+  }
+
+  .city-title {
+    font-size: 1.4rem;
+  }
+
+  .percent-big,
+  .percent-small {
+    font-size: 0.8rem;
+  }
+}
+
+/* ==========================================================
+   MOBILE LARGE (max-width: 576px)
+========================================================== */
+@media (max-width: 576px) {
+  .chart-sales {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .analytics-regional-subtitle {
+    font-size: 1.1rem;
+    line-height: 1.4;
+    padding: 1rem 0.5rem;
+    text-align: center;
+  }
+
+  .Pie-Yerevan,
+  .Pie-Abovyan {
+    width: 220px;
+    height: 220px;
+  }
+
+  .city-title {
+    font-size: 1.3rem;
+  }
+}
+
+/* ==========================================================
+   MOBILE MEDIUM (max-width: 430px)
+========================================================== */
+@media (max-width: 430px) {
+  .Pie-Yerevan,
+  .Pie-Abovyan {
+    width: 200px;
+    height: 200px;
+  }
+
+  .city-title {
+    font-size: 1.2rem;
+  }
+}
+
+/* ==========================================================
+   MOBILE SMALL (max-width: 380px)
+========================================================== */
+@media (max-width: 380px) {
+  .Pie-Yerevan,
+  .Pie-Abovyan {
+    width: 180px;
+    height: 180px;
+  }
+
+  .percent-big,
+  .percent-small {
+    font-size: 0.6rem;
+  }
+
+  .city-title {
+    font-size: 1.1rem;
+  }
+}
+
+/* ==========================================================
+   MOBILE EXTRA SMALL (max-width: 320px)
+========================================================== */
+@media (max-width: 320px) {
+  .Pie-Yerevan,
+  .Pie-Abovyan {
+    width: 160px;
+    height: 160px;
+  }
+
+  .city-title {
+    font-size: 1rem;
+  }
+  .percent-big,
+  .percent-small {
+    font-size: 0.6rem;
+  }
+}
