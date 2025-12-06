@@ -20,9 +20,10 @@ img {
 
 @font-face {
   font-family: "HelloJanuary";
-  src: url("../fonts/Hello_January_script_cyrillic_Script.otf") format("truetype");
+  src: url("../fonts/Hello_January_script_cyrillic_Script.otf") format("opentype");
   font-weight: 100;
   font-style: normal;
+  font-display: swap;
 }
 
 /* =======================================
