@@ -291,7 +291,8 @@
    LOYALTY  BLOCK 
 =========================================== */
 .loyalty-card {
-  padding-top: var(--root_padding_top);
+  padding-top: calc(var(--root_padding_top) + 1%);
+ 
 }
 
 .loyalty-display {
@@ -330,7 +331,7 @@
   font-family: "Inter", sans-serif;
   font-size: 1rem;
 
-  font-weight: lighter;
+  font-weight: 200;
 }
 
 .left-block__title {

@@ -115,9 +115,9 @@
     font-size: 2.8rem;
     text-align: center;
   }
-  .our-vision{
+  .our-vision {
     display: flex;
-    justify-content: center
+    justify-content: center;
   }
 }
 
@@ -150,8 +150,11 @@
 
   .vision-left-block p,
   .vision-right-block p {
-    width: 92%;
+    width: 100%;
     font-size: 0.9rem;
+  }  .vision-right-block p {
+    font-size: 0.9rem !important;
+    line-height: 1.5 !important;
   }
 
   .vision-mission .analytics-title {
@@ -169,14 +172,15 @@
 
   .vision-left-block p,
   .vision-right-block p {
-    width: 94%;
-    font-size: 0.85rem;
+    width: 100%;
   }
-
+  .vision-right-block p {
+    font-size: 0.8rem !important;
+    line-height: 1.5 !important;
+  }
   .vision-mission .analytics-title {
     font-size: 2rem;
   }
-
 }
 
 /* ===========================================
