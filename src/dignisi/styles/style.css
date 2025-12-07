@@ -154,7 +154,7 @@
   flex-direction: column;
   justify-content: space-around;
 
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  background: linear-gradient(rgba(0, 0, 0, 0.188), rgba(0, 0, 0, 0.549)),
     url("../images/Vardan.jpg");
   background-size: 150%;
   background-position: 100% 20%;
@@ -268,7 +268,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(0, 0, 0, 0.218);
   opacity: 1;
   transition: 0.3s ease;
 }
