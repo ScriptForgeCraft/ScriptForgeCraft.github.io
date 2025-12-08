@@ -362,6 +362,7 @@
   background: #000000;
   overflow: hidden;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -468,7 +469,6 @@
 .podcast-episodes {
   position: relative;
   z-index: 2;
-  max-width: 1200px;
   margin: 50px 0;
   display: flex;
   gap: 20px;
@@ -479,7 +479,6 @@
   background: #111;
   border-radius: 12px;
   overflow: hidden;
-  min-width: 240px;
   position: relative;
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.6);
   transition: 0.4s ease;

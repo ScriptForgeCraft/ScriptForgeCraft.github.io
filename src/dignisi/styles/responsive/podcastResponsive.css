@@ -1,90 +1,174 @@
 /* =========================================================
-   PODCAST — LAPTOP & BELOW (max-width: 1400px)
+   — LAPTOP (max-width: 1400px)
 ========================================================= */
 @media (max-width: 1400px) {
-  .podcast {
-    width: 100%;
+  .podcast-block {
+    padding: 0;
+    grid-template-columns: 1fr 0.8fr;
+    gap: 40px;
+  }
+
+  .podcast-text p {
+    max-width: 45vw;
+  }
+
+  .podcast-card {
+    padding: 45px;
+    transform: scale(0.95);
+  }
+
+  .episode-card {
+    min-width: 220px;
+  }
+}
+
+/* =========================================================
+   — TABLET (max-width: 1024px)
+========================================================= */
+@media (max-width: 1024px) {
+  .block.podcast {
+    padding-top: 80px;
   }
 
   .podcast-block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 60px;
   }
 
-  .podcast-image {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    margin-top: 100px;
-    position: static !important;
-  }
-
-  .podcast-image img {
-    width: 100vw;
-    height: auto;
-    display: block;
-    object-fit: cover;
-  }
-
-  .podcast-text {
-    max-width: 65ch;
-    margin: 2rem auto 0 auto;
-    padding: 0 1rem;
-    text-align: justify;
+  .podcast-text p {
+    max-width: 80%;
+    margin: 0 auto;
     font-size: 1.1rem;
   }
-}
 
-/* =========================================================
-   PODCAST — TABLET (max-width: 992px)
-========================================================= */
-@media (max-width: 992px) {
-  .podcast-text {
-    max-width: 90%;
-    margin-top: 1.5rem;
-    font-size: 1.05rem;
+  .podcast-card {
+    margin: 0 auto;
+    padding: 50px;
+    width: fit-content;
   }
 
-  .podcast-image img {
-    width: 100%;
-    height: auto;
-  }
-}
-
-/* =========================================================
-   PODCAST — MOBILE (max-width: 600px)
-========================================================= */
-@media (max-width: 600px) {
-  .podcast-text {
-    max-width: 90%;
-    margin: 1.2rem auto 0 auto;
-    font-size: 0.95rem;
-    text-align: justify;
-  }
-
-  .podcast-image {
-    width: 100%;
+  .podcast-episodes {
     justify-content: center;
-    margin-top: 10.5rem;
+    flex-wrap: wrap;
   }
 
-  .podcast-image img {
-    width: 100%;
+  .episode-card {
+    min-width: 220px;
+    max-width: 260px;
   }
 }
 
 /* =========================================================
-   PODCAST — SMALL MOBILE (max-width: 380px)
+   — MOBILE (max-width: 768px)
 ========================================================= */
-@media (max-width: 380px) {
-  .podcast-text {
-    max-width: 92%;
-    font-size: 0.88rem;
+@media (max-width: 768px) {
+  .podcast-title {
+    font-size: 2rem;
   }
 
-  .podcast-image img {
-    width: 100%;
+  .podcast-text p {
+    max-width: 90%;
+    font-size: 1rem;
+  }
+
+  .podcast-card {
+    padding: 35px 25px;
+    width: 90%;
+  }
+
+  .podcast-card__title {
+    font-size: 2rem;
+  }
+
+  .podcast-card__play-circle {
+    width: 54px;
+    height: 54px;
+    font-size: 1.2rem;
+  }
+
+  .podcast-episodes {
+    margin-top: 30px;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .episode-card {
+    min-width: 45%;
+    max-width: 48%;
+  }
+
+  .episode-card img {
+    height: 130px;
+  }
+}
+
+/* =========================================================
+   — SMALL MOBILE (max-width: 480px)
+========================================================= */
+@media (max-width: 480px) {
+  .block.podcast {
+    padding-top: 60px;
+  }
+
+  .podcast-title {
+    font-size: 1.8rem;
+  }
+
+  .podcast-text p {
+    max-width: 95%;
+    font-size: 0.95rem;
+  }
+
+  .podcast-card {
+    padding: 25px 20px;
+    border-radius: 14px;
+    transform: none;
+  }
+
+  .podcast-card__title {
+    font-size: 1.6rem;
+  }
+
+  .podcast-card__play-circle {
+    width: 46px;
+    height: 46px;
+  }
+
+  .podcast-card__cta {
+    font-size: 0.75rem;
+  }
+
+  .episode-card {
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  .episode-card img {
+    height: 120px;
+  }
+}
+
+/* =========================================================
+   — EXTRA SMALL MOBILE (max-width: 360px)
+========================================================= */
+@media (max-width: 360px) {
+  .podcast-card {
+    padding: 18px;
+  }
+
+  .podcast-card__title {
+    font-size: 1.35rem;
+  }
+
+  .podcast-card__play-circle {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .episode-card img {
+    height: 110px;
   }
 }
