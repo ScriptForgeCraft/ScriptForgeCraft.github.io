@@ -136,6 +136,10 @@
 
   .podcast-card {
     background: rgba(20, 20, 20, 0);
-    backdrop-filter: blur(1px);
+    backdrop-filter: blur(3px);
+  }
+
+  .block.podcast::before {
+    filter: contrast(0.7) brightness(0.4);
   }
 }
