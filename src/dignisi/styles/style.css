@@ -356,7 +356,6 @@
 =========================================== */
 
 .block.podcast {
- 
   padding-top: var(--root_padding_top);
   position: relative;
   background: #000000;
@@ -400,7 +399,15 @@
   line-height: 1.65;
   max-width: 40vw;
 }
- 
+
+.podcast-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+}
+
 /* PODCAST CARD */
 
 .podcast-card {
@@ -416,7 +423,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
 }
 
 .podcast-card:hover {
