@@ -1034,8 +1034,10 @@
   width: 22px;
   opacity: 0.85;
   transition: opacity 0.2s ease, transform 0.2s ease;
+ 
+ 
 }
-
+ 
 .footer__inner > a + a {
   margin-left: 14px;
 }
@@ -1085,6 +1087,6 @@
 
 .copy-item.copied::after {
   content: "✔";      
-  color: #7fff7f;   
+  color:var(--text_color_dark_gold);   
 }
  
