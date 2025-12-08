@@ -8,7 +8,7 @@
     flex-direction: column;
     align-items: center;
   }
-}
+
 .podcast-episodes {
 
   width: 95vw;
@@ -37,6 +37,7 @@
 .podcast-episodes::-webkit-scrollbar-thumb {
   background: linear-gradient(90deg, #c8a86e, #e5d3aa);
   border-radius: 10px;
+}
 }
 
 /* ==============================
