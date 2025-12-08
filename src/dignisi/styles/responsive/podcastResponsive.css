@@ -9,35 +9,34 @@
     align-items: center;
   }
 
-.podcast-episodes {
+  .podcast-episodes {
+    width: 95vw;
+    overflow-x: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    justify-content: flex-start;
+  }
 
-  width: 95vw;
-  overflow-x: auto;
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  scroll-behavior: smooth;
-  scroll-snap-type: x mandatory;
-  justify-content: flex-start;
-}
+  .episode-card {
+    min-width: 220px;
+    scroll-snap-align: start;
+  }
 
-.episode-card {
-  min-width: 220px;
-  scroll-snap-align: start;
-}
+  .episode-card img {
+    height: 150px;
+  }
 
-.episode-card img {
-  height: 150px;
-}
+  .podcast-episodes::-webkit-scrollbar {
+    height: 6px;
+  }
 
-.podcast-episodes::-webkit-scrollbar {
-  height: 6px;
-}
-
-.podcast-episodes::-webkit-scrollbar-thumb {
-  background: linear-gradient(90deg, #c8a86e, #e5d3aa);
-  border-radius: 10px;
-}
+  .podcast-episodes::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg, #c8a86e, #e5d3aa);
+    border-radius: 10px;
+  }
 }
 
 /* ==============================
@@ -133,5 +132,10 @@
   .episode-card {
     min-width: 160px;
     scroll-snap-align: start;
+  }
+
+  .podcast-card {
+    background: rgba(20, 20, 20, 0);
+    backdrop-filter: blur(1px);
   }
 }
