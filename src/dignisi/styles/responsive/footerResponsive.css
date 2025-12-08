@@ -1,0 +1,137 @@
+
+
+/* =========================================================
+   LARGE TABLET (max-width: 1200px)
+========================================================= */
+@media (max-width: 1200px) {
+  .footer__inner {
+    gap: 40px;
+  }
+
+  .footer__info {
+    gap: 50px;
+  }
+
+  .footer__col {
+    width: 160px;
+  }
+
+  .footer__brand {
+    width: 150px;
+  }
+}
+
+
+
+/* =========================================================
+   MEDIUM TABLET (max-width: 900px)
+========================================================= */
+@media (max-width: 900px) {
+  .footer__inner {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .footer__brand {
+    width: 100%;
+    align-items: center;
+  }
+
+  .footer__info {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .footer__col {
+    width: 160px;
+  }
+
+  .footer__inner > a {
+    order: -1;
+  }
+}
+
+
+
+/* =========================================================
+   MOBILE (max-width: 600px)
+========================================================= */
+@media (max-width: 600px) {
+  .footer {
+    padding: 40px 0 20px;
+  }
+
+  .footer__inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .footer__info {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .footer__col {
+    width: auto;
+  }
+
+  .footer__brand img {
+    width: 45px;
+  }
+
+  .footer__brand-name {
+    font-size: 16px;
+  }
+
+  .footer__col p,
+  .footer__col .footer__title {
+    font-size: 14px;
+  }
+
+  .footer__inner > a {
+    margin: 0 6px;
+  }
+
+  .footer__bottom {
+    font-size: 12px;
+    margin-top: 20px;
+  }
+}
+
+
+
+/* =========================================================
+   SMALLER MOBILE (max-width: 380px)
+========================================================= */
+@media (max-width: 380px) {
+  .footer__inner {
+    gap: 20px;
+  }
+
+  .footer__info {
+    gap: 18px;
+  }
+
+  .footer__brand img {
+    width: 38px;
+  }
+
+  .footer__brand-name {
+    font-size: 14px;
+  }
+
+  .footer__col p,
+  .footer__col .footer__title {
+    font-size: 13px;
+  }
+
+  .footer__bottom {
+    font-size: 11px;
+  }
+}

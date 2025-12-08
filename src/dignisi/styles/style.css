@@ -912,6 +912,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-color: black;
+  border-bottom: 10px solid black;
 }
 .vision-block {
   flex-grow: 1;
@@ -949,3 +950,141 @@
 /* ===========================================
    block vision-mission END
 =========================================== */
+
+/* =========================================================
+   FOOTER BASE
+========================================================= */
+.footer {
+  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.116);
+  position: relative;
+  background: #000000;
+  color: #fff;
+  padding: 60px 0 20px;
+  font-family: "Inter", sans-serif;
+}
+
+.footer__inner {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+.footer__brand {
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__brand img {
+  width: 55px;
+  opacity: 0.9;
+}
+
+.footer__brand-name {
+  font-size: 18px;
+  color: var(--text_color_gold, #c3a168);
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+
+.footer__info {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  gap: 80px;
+}
+
+.footer__col {
+  width: 180px;
+}
+
+.footer__col p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #ccc;
+}
+.footer__col .footer__title {
+  font-size: 1rem ;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--text_color_gold) ;
+}
+.footer__col:last-child p {
+  white-space: nowrap;
+}
+
+.footer__col strong {
+  font-weight: 600;
+}
+
+.footer__inner > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+}
+
+.footer__inner > a img {
+  width: 22px;
+  opacity: 0.85;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.footer__inner > a + a {
+  margin-left: 14px;
+}
+
+.footer__inner > a:hover img {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+.footer__bottom {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 13px;
+  color: #999;
+  border-top: 1px solid #222;
+  padding-top: 20px;
+}
+
+
+
+
+
+/* =========================================================
+   copy-item
+========================================================= */
+.copy-item {
+  position: relative;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;  
+}
+
+.copy-item::after {
+  content: "⧉";
+  font-size: 14px;
+  color: #fff;
+  opacity: 0.5;
+  opacity: 0;
+  transition: 0.25s ease;
+}
+
+.copy-item:hover::after {
+  opacity: 1;
+}
+
+.copy-item.copied::after {
+  content: "✔";      
+  color: #7fff7f;   
+}
+ 
