@@ -272,7 +272,6 @@
   transition: 0.3s ease;
 }
 
-/* эффект при наведении */
 .partners-map__logos a:hover img {
   filter: brightness(100%);
   transform: scale(1.07);
@@ -357,12 +356,14 @@
 =========================================== */
 
 .block.podcast {
+ 
   padding-top: var(--root_padding_top);
   position: relative;
   background: #000000;
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 
@@ -415,6 +416,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
 }
 
 .podcast-card:hover {
@@ -472,6 +474,8 @@
   display: flex;
   gap: 20px;
   padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 .episode-card {
