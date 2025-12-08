@@ -397,10 +397,11 @@
 
 .podcast-text p {
   font-size: 1.2rem;
+  order: 2;
   line-height: 1.65;
   max-width: 40vw;
 }
-
+ 
 /* PODCAST CARD */
 
 .podcast-card {
