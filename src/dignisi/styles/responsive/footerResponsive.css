@@ -1,42 +1,34 @@
-
-
 /* =========================================================
-   LARGE TABLET (max-width: 1200px)
+   FOOTER — LAPTOP (max-width: 1400px)
 ========================================================= */
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .footer__inner {
     gap: 40px;
+    justify-content: space-between;
   }
 
   .footer__info {
-    gap: 50px;
+    gap: 60px;
   }
 
   .footer__col {
     width: 160px;
   }
 
-  .footer__brand {
-    width: 150px;
+  .footer__socials a {
+    width: 34px;
+    height: 34px;
   }
 }
-
-
-
 /* =========================================================
-   MEDIUM TABLET (max-width: 900px)
+   FOOTER — TABLET (max-width: 992px)
 ========================================================= */
-@media (max-width: 900px) {
+@media (max-width: 992px) {
   .footer__inner {
     flex-wrap: wrap;
     justify-content: center;
-    text-align: center;
+    text-align: left;
     gap: 40px;
-  }
-
-  .footer__brand {
-    width: 100%;
-    align-items: center;
   }
 
   .footer__info {
@@ -50,15 +42,18 @@
     width: 160px;
   }
 
-  .footer__inner > a {
-    order: -1;
+  .footer__socials {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .footer__socials a {
+    width: 34px;
+    height: 34px;
   }
 }
-
-
-
 /* =========================================================
-   MOBILE (max-width: 600px)
+   FOOTER — MOBILE (max-width: 600px)
 ========================================================= */
 @media (max-width: 600px) {
   .footer {
@@ -68,70 +63,43 @@
   .footer__inner {
     flex-direction: column;
     align-items: center;
-    text-align: center;
     gap: 30px;
   }
 
   .footer__info {
     flex-direction: column;
-    gap: 24px;
+    gap: 30px;
   }
 
   .footer__col {
+    text-align: left;
     width: auto;
   }
 
-  .footer__brand img {
-    width: 45px;
-  }
-
-  .footer__brand-name {
-    font-size: 16px;
-  }
-
-  .footer__col p,
-  .footer__col .footer__title {
-    font-size: 14px;
-  }
-
-  .footer__inner > a {
-    margin: 0 6px;
-  }
-
-  .footer__bottom {
-    font-size: 12px;
-    margin-top: 20px;
-  }
-}
-
-
-
-/* =========================================================
-   SMALLER MOBILE (max-width: 380px)
-========================================================= */
-@media (max-width: 380px) {
-  .footer__inner {
+  .footer__socials {
+    justify-content: center;
     gap: 20px;
   }
 
-  .footer__info {
-    gap: 18px;
+  .footer__socials a {
+    width: 36px;
+    height: 36px;
   }
-
-  .footer__brand img {
-    width: 38px;
-  }
-
-  .footer__brand-name {
-    font-size: 14px;
-  }
-
-  .footer__col p,
-  .footer__col .footer__title {
+}
+/* =========================================================
+   FOOTER — SMALL MOBILE (max-width: 380px)
+========================================================= */
+@media (max-width: 380px) {
+  .footer__col p {
     font-size: 13px;
   }
 
-  .footer__bottom {
-    font-size: 11px;
+  .footer__socials {
+    gap: 14px;
+  }
+
+  .footer__socials a {
+    width: 32px;
+    height: 32px;
   }
 }
