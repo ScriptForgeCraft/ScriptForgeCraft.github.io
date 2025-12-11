@@ -1,9 +1,7 @@
 import "@js/navigation/headerScroll.js";
 import "@js/navigation/mobileMenu.js";
 import "@js/partners-scroll.js";
-import "../css/globals.css";
-import "../styles/style.css";
-import "../styles/responsive/responsive.css";
+
 
 document.addEventListener("DOMContentLoaded", async () => {
   const initCharts = () => {
