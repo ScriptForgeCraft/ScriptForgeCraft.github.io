@@ -11,15 +11,16 @@
     <meta name="description"
         content="Dignisi — a leading real estate company in Armenia offering new residential developments, market analytics, Prospect24 consulting, and the Dhomie CRM platform.">
 
-    <link rel="canonical" href="https://dignisi.am" />
+    <!-- Correct canonical for current production domain -->
+    <link rel="canonical" href="https://dignisi.vercel.app" />
 
     <!-- OpenGraph -->
     <meta property="og:title" content="Dignisi — Real Estate in Armenia">
     <meta property="og:description"
         content="New residential developments, analytics, consulting and real estate insights.">
-    <meta property="og:image" content="https://dignisi.am/preview.jpg">
+    <meta property="og:image" content="https://dignisi.vercel.app/preview.jpg">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://dignisi.am">
+    <meta property="og:url" content="https://dignisi.vercel.app">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
@@ -32,8 +33,8 @@
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "Dignisi",
-      "url": "https://dignisi.am",
-      "logo": "https://dignisi.am/src/dignisi/images/dignisi-logo.png",
+      "url": "https://dignisi.vercel.app",
+      "logo": "https://dignisi.vercel.app/src/dignisi/images/dignisi-logo.png",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Azatutyan 1",
@@ -63,10 +64,9 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap">
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <link rel="icon" type="image/png" href="/favicon.png">
+    <!-- Favicon (correct modern version) -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" href="/favicon.png" sizes="48x48">
 
     <!-- CSS -->
     <link rel="stylesheet" href="src/css/normalize.css">
@@ -78,6 +78,7 @@
     <!-- JS -->
     <script type="module" src="src/dignisi/js/main.js" defer></script>
 </head>
+
 
 <body>
     <header class="main-header">
