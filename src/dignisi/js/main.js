@@ -2,7 +2,6 @@ import "@js/navigation/headerScroll.js";
 import "@js/navigation/mobileMenu.js";
 import "@js/partners-scroll.js";
 
-
 document.addEventListener("DOMContentLoaded", async () => {
   const initCharts = () => {
     import("@js/pricesChart.js");
