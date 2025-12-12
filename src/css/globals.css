@@ -17,6 +17,15 @@ html {
 }
 
 /*scroll */
+html,
+body {
+  height: auto;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
 
 body::-webkit-scrollbar {
   width: 6px;
